@@ -4,16 +4,6 @@ has_children: true
 nav_order: 30
 ---
 
-{: .warning }
-> For phases 3 to 5, your project grade will have two components:
-> 1. **Group Grade**: Determined by grading rubric for that particular phase.
-> 2. **Individual Grade**: Determined by your contributions to the project. **Be prepared to explain those during an oral interview with a TA or Instructor**. The goal is to determine which parts of the project you worked on, what you did, what worked and did not work in your development process and in your part of the submitted project, and how well you can explain what you did and did not do and accomplish.
->
-> The group grade will be each student’s default grade. If the staff feels there was a reasonable division of labor among team members and a student basically understands their part of the project and how it fits in the bigger picture, then the student will get the group grade. If the student does not meet this bar, then their grade will be adjusted lower appropriately.
->
-> We anticipate that, if you complete the project satisfactorily, you will receive an A in the class.
-
-
 ## Introduction
 
 This is an overview of the course project and how we’ll grade it. You should not expect to understand all the technical terms, since we haven’t yet covered them in class. We’re handing it out today to give you some idea of the kind of project we’re assigning, and to let you know the various due dates. Additional handouts will provide the technical details of the project.
@@ -73,7 +63,7 @@ The last class will be the “Virtual Machine Derby” at which your group will 
 
 ## Grading
 
-For each phase, you are required to submit your *design report*, *complete source code* (including all files needed to build your project), and *additional test cases*. Your projects will be submitted via GitHub. Do not include compiled files. Instead, you repo should contain an executable file called `build.sh` in the top-level directory which will compile your code. These files are provided for you in the skeleton code; you may modify them if you need to.
+For each phase, you are required to submit your *design report*, *complete source code* (including all files needed to build your project), and *additional test cases*. Your projects will be submitted via Gradescope. Do not include compiled files. Instead, you repo should contain an executable file called `build.sh` in the top-level directory which will compile your code. These files are provided for you in the skeleton code; you may modify them if you need to.
 
 Phases 3 through 5 will be done in groups. Each group will be given access to a repository for their project on Github.
 
@@ -82,6 +72,17 @@ There are few restrictions on how the project should be structured, except that 
 We will release public tests associated with each phase, which will be released with the phase instructions. There are also private tests, which will be released **after** the due date of each phase. We will grade your submission based on both the public and private tests after each phase.
 
 Your design report and additional test cases will make up a portion of your grade for each phase. Please make sure not to neglect turning it in.
+
+{: .note }
+> For phases 3 to 5, your project grade will have two components:
+> 1. **Group Grade**: Determined by grading rubric for that particular phase.
+> 2. **Individual Grade**: Determined by your contributions to the project. **Be prepared to explain those during an oral interview with a TA or Instructor**. The goal is to determine which parts of the project you worked on, what you did, what worked and did not work in your development process and in your part of the submitted project, and how well you can explain what you did and did not do and accomplish.
+>
+> The group grade will be each student’s default grade. If the staff feels there was a reasonable division of labor among team members and a student basically understands their part of the project and how it fits in the bigger picture, then the student will get the group grade. If the student does not meet this bar, the staff reserves the right to  adjust the individual grade lower appropriately.
+>
+> We anticipate that, if you complete the project satisfactorily, you will receive an A in the class.
+
+
 
 [phase_1]: {% link _pages/project/phase_1.md %}
 [phase_2]: {% link _pages/project/phase_2.md %}
