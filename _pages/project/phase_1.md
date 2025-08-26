@@ -19,8 +19,8 @@ Also see [Recitation 1 slides](assets/documents/recitations/r01-project-overview
 ## Getting Started
 
 1. Read the [project specification]({% link _pages/project.md %}).
-2. Follow [these instructions]({% link _pages/class-tools/setup.md %}) to set up a programming environment.
-3. Follow [these instructions]({% link _pages/class-tools/skeletons.md %}) to set up and understand the project skeletons.
+2. Follow [these instructions]({% link _pages/infrastructure/setup.md %}) to set up a programming environment.
+3. Follow [these instructions]({% link _pages/infrastructure/skeletons.md %}) to set up and understand the project skeletons.
 4. Read the [Decaf spec]({% link _pages/project/decaf-spec.md %}). Phase 1 will only reference the first two sections, but we suggest reading the entire specification before starting.
 
 You will need to refer to the [Decaf spec]({%link _pages/project/decaf-spec.md%}) when implementing the scanner and parser. Note that grammar in the Decaf spec does not specify what goes into the scanner and what goes into the parser; you will have to determine this split yourself.
@@ -31,7 +31,7 @@ You are welcome to use scanner/parser generators, or to write this code by hand.
 
 ## Scanner
 
-Your scanner must be able to identify tokens of the Decaf language, the simple imperative language we will be compiling in 6.110. The language is described in the [Decaf spec]({%link _pages/project/decaf-spec.md%}). Your scanner should note illegal characters, missing quotation marks, and other lexical errors with reasonable error messages. The scanner should find as many lexical errors as possible, and should be able to continue scanning after errors are found. The scanner should also filter out comments and whitespace not in string and character literals.
+Your scanner must be able to identify tokens of the Decaf language, the simple imperative language we will be compiling in 6.112. The language is described in the [Decaf spec]({%link _pages/project/decaf-spec.md%}). Your scanner should note illegal characters, missing quotation marks, and other lexical errors with reasonable error messages. The scanner should find as many lexical errors as possible, and should be able to continue scanning after errors are found. The scanner should also filter out comments and whitespace not in string and character literals.
 
 When `-t scan` is specified, the output of your compiler should be a scanned listing of the program with one row for each token in the input. Each line will contain the following information: the line number (starting at 1) on which the token appears, the type of the token (if applicable), and the token's text. Emit int casts as `int`, `(`, `)`, and long casts as `long`, `(`, `)` on separate lines. Please print only the following strings as token types: `CHARLITERAL`, `INTLITERAL`, `LONGLITERAL`, `BOOLEANLITERAL`, `STRINGLITERAL` and `IDENTIFIER`.
 
@@ -147,4 +147,4 @@ Therefore, rather than do some checking earlier and some later, we have decided 
 When printing out the token table from your scanner, do not print the value of an `INTLITERAL` token in decimal. Print it exactly as it appears in the source program, whether decimal or hex.
 
 [s3]: https://studentlife.mit.edu/s3
-[autograder]: {% link _pages/class-tools/autograder.md %}
+[autograder]: {% link _pages/infrastructure/autograder.md %}

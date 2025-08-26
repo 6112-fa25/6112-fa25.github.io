@@ -1,6 +1,6 @@
 ---
 title: Environment Setup
-parent: Class Tools
+parent: Infrastructure
 nav_order: 1
 ---
 
@@ -28,7 +28,7 @@ It is your responsibility to ensure that your compiler is entirely compatible wi
 ## Ubuntu
 Subsequent instructions assume that you're on a default Ubuntu installation. If you're completely new to Linux, take some time familarize yourself with it. You will need to use the terminal at least to run the test scripts.
 
-We will be using Git to distribute test scripts and handle code submission. You should also use Git to collaborate with your teammates. If you're not familiar with basic Git usage like resolving merge conflicts, read [Using Git]({% link _pages/class-tools/git.md %}). That also includes instructions for setting up Git.
+We will be using Git to distribute test scripts and handle code submission. You should also use Git to collaborate with your teammates. If you're not familiar with basic Git usage like resolving merge conflicts, read [Using Git]({% link _pages/infrastructure/git.md %}). That also includes instructions for setting up Git.
 
 Finally, set up the environment for your chosen language. If you're using Java or Scala, install the JDK:
 
@@ -78,4 +78,4 @@ popd
 
 [^1]: While the class was traditionally run on Athena, we recommend against using Athena this semester. The dialup can be slow and isn't suited for computationally intensive work like optimizing programs.
 
-[autograder]: {% link _pages/class-tools/autograder.md %}
+[autograder]: {% link _pages/infrastructure/autograder.md %}

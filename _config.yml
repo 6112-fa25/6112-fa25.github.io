@@ -1,18 +1,17 @@
-title: 6.110 Spring 2025
-description: Course website for 6.110 Spring 2025
+title: 6.112 Fall 2025
+description: Course website for 6.112 Fall 2025
 theme: just-the-docs
 
-url: https://6110-sp25.github.io
+url: https://6112-fa25.github.io
 
 back_to_top: true
 back_to_top_text: "Back to top"
 footer_content: " "
 
 aux_links:
-  GitHub: https://github.com/6110-sp25/
-  Piazza: https://piazza.com/mit/spring2025/6110/home
+  GitHub: https://github.com/6112-fa25/
+  Piazza: https://piazza.com/mit/fall2025/61120
   Gradescope: https://www.gradescope.com/courses/931853
-  Panopto: https://mit.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=d1b52dac-7f75-4148-ae95-b27f000ebb7e
 
 collections:
   pages:
@@ -58,3 +57,6 @@ callouts:
   weekly:
     title: Weekly updates
     color: green
+  catalog:
+    title: Catalog Description
+    color: grey-dk

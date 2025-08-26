@@ -1,5 +1,5 @@
 ---
-title: Compiler Project
+title: Project
 has_children: true
 nav_order: 30
 ---

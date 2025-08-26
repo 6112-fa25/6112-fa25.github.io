@@ -1,6 +1,6 @@
 ---
-title: Decaf Specification
-parent: Compiler Project
+title: MITScript Specification
+parent: Project
 nav_order: 1
 ---
 

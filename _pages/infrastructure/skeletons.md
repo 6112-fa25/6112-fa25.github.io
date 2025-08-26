@@ -1,6 +1,6 @@
 ---
 title: Project Skeletons
-parent: Class Tools
+parent: Infrastructure
 nav_order: 20
 ---
 
@@ -12,7 +12,7 @@ Choose a language and its corresponding skeleton repo. Though the choice of lang
 - [Typescript](https://github.com/6110-sp25/decaf-skeleton-typescript)
 - Get in touch with the TAs if you want to use any other language
 
-Create and navigate to a directory where you'd like your project files to be stored (`~/Documents/6.110-compiler-phase1` or `~/Desktop/6.110-compiler-phase1` is a good choice) and run the following commands.
+Create and navigate to a directory where you'd like your project files to be stored (`~/Documents/6.112-compiler-phase1` or `~/Desktop/6.112-compiler-phase1` is a good choice) and run the following commands.
 
 ```bash
 git init

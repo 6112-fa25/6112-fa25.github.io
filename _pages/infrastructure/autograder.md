@@ -1,6 +1,6 @@
 ---
 title: Autograder
-parent: Class Tools
+parent: Infrastructure
 nav_order: 30
 ---
 

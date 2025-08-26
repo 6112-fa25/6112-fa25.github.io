@@ -1,6 +1,6 @@
 ---
 title: Git Tutorial
-parent: Class Tools
+parent: Infrastructure
 nav_order: 10
 ---
 
