@@ -1,6 +1,6 @@
 ---
-title: Git Tutorial
-parent: Infrastructure
+title: Git
+parent: Tutorials
 nav_order: 10
 ---
 

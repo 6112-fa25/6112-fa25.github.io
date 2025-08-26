@@ -1,6 +1,6 @@
 ---
 title: Autograder
-parent: Infrastructure
+parent: Tutorials
 nav_order: 30
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: Project Skeletons
-parent: Infrastructure
+title: Skeleton
+parent: Tutorials
 nav_order: 20
 ---
 

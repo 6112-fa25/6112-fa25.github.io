@@ -1,6 +1,6 @@
 ---
 title: macOS
-parent: Infrastructure
+parent: Tutorials
 nav_order: 40
 ---
 There are unique challenges presented with using macOS for the compiler project. However, because many students use macOS as their primary work machine, we present this page to explain some workarounds that can be used to enable you to efficiently work on the compiler project natively on macOS.
