@@ -34,7 +34,7 @@ We can point you to many resources such as well-known textbooks, technical paper
 
 ## Project
 
-The main component of this course (95% of the grade) is a project where you will build a language implementation almost entirely from scratch. The first two phases (which cover parsing, lexing, and interpretation) of the project will be done individually, and the rest of the project will be done in groups of 2-4.
+The main component of this course (95% of the grade) is a project where you will build a language implementation almost entirely from scratch. The first two phases (which cover parsing, lexing, and interpretation) of the project will be done individually, and the rest of the project will be done in groups of three.
 Details about the project can be found on the [Project][project] page. Specific instructions for each phase of the project will be released later in the class.
 
 ## Class
@@ -72,14 +72,16 @@ Your grade is based upon two components: your virtual machine (95%) and mini-qui
 | ------------------------------------------------------------ | ------ |
 | Project phase 1 (lexing and parsing)                         | 5%     |
 | Project phase 2 (interpretation)                             | 20%    |
-| Project phase 3 (garbage collection)                         | 20%    |
-| Project phase 4 (virtual machine)                            | 15%    |
+| Project phase 3 (memory management)                          | 15%    |
+| Project phase 4 (virtual machine)                            | 20%    |
 | Project phase 5 (derby)                                      | 35%    |
 | Participation (surveys, miniquizzes)                         | 5%     |
 
 ## Late Policy
 
-We expect you to submit all components of the class on time. For extensions under extenuating circumstances (e.g., a member of your team is sick, family emergencies), we require a letter from one of the student deans at [Student Support Services (S<sup>3</sup>)][s3].
+We will accept late final submissions for any reason up to 72 hours after the deadline. 10% will be deducted for a submission that's up to 24 hours late, 20% will be deducted for a submission that's up to 48 hours late, and 30% will be deducted for a submission that's up to 72 hours late. Late submissions will not be accepted for extra credit checkpoints but only for the final submission of each phase (i.e., the submission that's due at the final deadline).
+
+If you have additional extenuating circumstances, we can grant additional extensions (without penalty) as long as we get a note from [Student Support Services (S<sup>3</sup>)][s3].
 
 ## Collaboration Policy
 
