@@ -8,13 +8,14 @@ Your `run.sh` script should have the following command line interface. The autog
 
 ```
 ./run.sh [SUBCOMMAND] [input_file] [OPTIONS]
-
+****
 POSITIONALS:
   input_file TEXT             Path to input file, use '-' for stdin
 
 OPTIONS:
   -h,     --help              Print this help message and exit
   -o,     --output TEXT       Path to output file, use '-' for stdout
+  -m,     --mem UINT          Memory limit in MB -- Only enabled for VM subcommand
 
 SUBCOMMANDS:
   scan
