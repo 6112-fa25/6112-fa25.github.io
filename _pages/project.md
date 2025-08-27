@@ -4,6 +4,8 @@ has_children: true
 nav_order: 30
 ---
 
+{%include toc.html %}
+
 ## Introduction
 
 This is an overview of the course project and how we’ll grade it. You should not expect to understand all the technical terms, since we haven’t yet covered them in class. We’re handing it out today to give you some idea of the kind of project we’re assigning, and to let you know the various due dates. Additional handouts will provide the technical details of the project.
@@ -49,7 +51,7 @@ store_local 1 # pop the top value off the stack and store in x
 
 You will learn how to translate a high-level language into a low-level, machine-interpretable representation. You will also gain an understanding of how the design and performance of abstractions in the low-level representation interact with and influence the design of the high-level language.
 
-## Phase 5: Derby
+## Phase 5: Performance Optimization + Derby
 
 The final phase is a substantial open-ended phase. In this phase your team's task is to generate an efficient implementation for MITScript programs so that they will be correctly executed in the shortest possible time.
 
@@ -62,6 +64,16 @@ In this phase, the group has to submit a milestone and several checkpoints of th
 The last class will be the “Virtual Machine Derby” at which your group will compete against other groups to identify the virtual machine that produces the fastest code. The application(s) used for the Derby will be provided to the groups one day before the Derby. This is done in order for your group to debug the compiler and get it working on this program. However, you are forbidden from adding any application-specific hacks to make this specific program run faster.
 
 ## Grading
+
+As a reminder from the syllabus, the grading for the project is distributed as follows:
+
+| Component                                                    | Weight |
+| ------------------------------------------------------------ | ------ |
+| Project phase 1 (lexing and parsing)                         | 5%     |
+| Project phase 2 (interpretation)                             | 20%    |
+| Project phase 3 (memory management)                          | 15%    |
+| Project phase 4 (virtual machine)                            | 20%    |
+| Project phase 5 (derby)                                      | 35%    |
 
 For each phase, you are required to submit your *design report*, *complete source code* (including all files needed to build your project), and *additional test cases*. Your projects will be submitted via Gradescope. Do not include compiled files. Instead, you repo should contain an executable file called `build.sh` in the top-level directory which will compile your code. These files are provided for you in the skeleton code; you may modify them if you need to.
 

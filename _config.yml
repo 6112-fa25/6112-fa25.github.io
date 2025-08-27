@@ -58,5 +58,5 @@ callouts:
     title: Weekly updates
     color: green
   catalog:
-    title: Catalog Description
+    title:
     color: grey-dk

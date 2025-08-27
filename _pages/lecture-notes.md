@@ -1,5 +1,5 @@
 ---
-title: Lecture Slides
+title: Slides
 nav_order: 60
 ---
 

@@ -18,6 +18,17 @@ nav_order: 10
 >
 > Studies the design and implementation of modern, dynamic programming languages. Topics include fundamental approaches for parsing, semantics and interpretation, virtual machines, garbage collection, just-in-time machine code generation, and optimization. Includes a semester-long, group project that delivers a virtual machine that spans all of these topics.
 
+## Staff
+
+#### Lecturers
+[Michael Carbin](https://people.csail.mit.edu/mcarbin/) (<mcarbin@mit.edu>)
+
+#### Teaching Assistants
+Kosi Nwabueze (<kosinw@mit.edu>)
+
+Please contact the course staff by posting on [Piazza][piazza] or emailing <6.112-staff@mit.edu>.
+
+
 ## Communication
 
 - We will distribute assignments here and make all announcements via [Piazza][piazza]. Important announcements will also be made via email.
@@ -35,7 +46,7 @@ We can point you to many resources such as well-known textbooks, technical paper
 ## Project
 
 The main component of this course (95% of the grade) is a project where you will build a language implementation almost entirely from scratch. The first two phases (which cover parsing, lexing, and interpretation) of the project will be done individually, and the rest of the project will be done in groups of three.
-Details about the project can be found on the [Project][project] page. Specific instructions for each phase of the project will be released later in the class.
+Details about the project can be found on the [project overview][project] page. Specific instructions for each phase of the project will be released later in the class.
 
 ## Class
 
@@ -96,18 +107,8 @@ While you may discuss the high-level approaches to the project with anybody, you
 We encourage you to try to use LLM-generated code in your project. Your use of LLM generated code will have no effect, either positive or negative, on your grade. To cite one extreme example, if you type "Can you please generate a virtual machine for the MITScript programming language" into the prompt box of an LLM and get a full virtual machine back (we have tried this and it does not seem to work), you will get full credit if the virtual machine satisfies the course requirements.
 
 If you decide to use LLM-generated code, you should explain your general approach to using LLMs in your project report.
-We also ask that all teams document their use of LLM generated code via a LLM code usage survey turned in three days after each project phase deadline. This survey will be made available on Gradescope.
+We also ask that all teams document their use of LLM generated code via a LLM code usage survey turned in with the project reports. This survey will be made available on Gradescope.
 One easy way to record your interactions with LLMs is, for example, the "Share link to Chat" feature that ChatGPT provides.
-
-## Staff
-
-#### Lecturers
-[Michael Carbin](https://people.csail.mit.edu/mcarbin/) (<mcarbin@mit.edu>)
-
-#### Teaching Assistants
-Kosi Nwabueze (<kosinw@mit.edu>)
-
-Please contact the course staff by posting on [Piazza][piazza] or emailing <6.112-staff@mit.edu>.
 
 
 [004]: https://student.mit.edu/catalog/m6a.html#6.1910

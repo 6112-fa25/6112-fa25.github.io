@@ -1,17 +1,16 @@
 ---
 title: Git
 parent: Tutorials
-nav_order: 10
+nav_order: 20
 ---
+
+The following is a tutorial on using the version control system, Git.
+
+{% include toc.html %}
 
 # Setting up Git
 
-Install Git by typing the following into the terminal:
-
-```
-sudo apt update
-sudo apt install git -y
-```
+Install Git by following the instructions in [the git book](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
 Configure Git with the following commands, replacing `<email>` with your email and `<name>` with your name. This information would be included in all your commits.
 

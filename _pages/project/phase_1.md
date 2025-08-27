@@ -6,32 +6,40 @@ nav_order: 10
 
 This phase consists of two segments: lexical analysis (aka scanning or lexing) and syntactic analysis (aka parsing).
 
+{% include toc.html %}
+
 {: .announcement }
-> There are three things you need to submit for this phase:
+> There are three components you need to submit for this phase:
 > 1. Your scanner and parser code, due at **10:00 PM on Monday, September 22**.
-> 2. A short report, due at **10:00 PM on Tuesday, September 23**.
+> 2. A short report, due at **10:00 PM on Monday, September 22**.
 > 3. Ten additional test cases, due at **10:00 PM on Monday, September 22**.
+
 
 ## Getting Started
 
-1. Follow [these instructions]({% link _pages/tutorials/skeleton.md %}) to set up your C++ project skeleton.
-2. Read the [language spec]({% link _pages/project/spec.md %}). Phase 1 will only reference the first two sections.
-3. Read and understand the command line reference.
+1. Read the [project overview]({% link _pages/project.md %}).
+2. Follow [these instructions]({% link _pages/tutorials/setup.md %}) to set up your project skeleton.
+3. Read and understand the [command line reference][cli].
 4. Read [this document]({% link _pages/project/phase_1.md %}).
 
-You will need to refer to the [language spec]({%link _pages/project/spec.md%}) (in particular section 1) when implementing the scanner and parser. The grammar in the language spec does not specify what goes into the scanner and what goes into the parser; you will have to determine this split yourself.
+You'll need to check the [language spec]({%link _pages/project/spec.md%}) (in particular, section 1) when building your scanner and parser. The grammar rules don't tell you exactly what each part should handle—you'll need to figure out how to divide the work between the scanner and parser.
 
-We recommend hand writing your lexer. However, you are welcome to use a scanner generator such as ANTLR4 or flex to create your scanner if you prefer.
+We suggest writing your scanner by hand. But if you want, you can use tools like ANTLR4 or flex to help generate the tokenizer code.
 
-You are **not allowed** to use a parser generator to generate your parser, you must hand write a recursive-descent parser. Parser combinators, pratt parsing, and other hand-written parsing techniques are also OK.
+You **must** write your parser by hand such as a recursive descent parser. You may not use parser generators. Other hand-written approaches like parser combinators are fine too.
 
 ## Scanner
 
 Your scanner must be able to identify tokens of the MITScript language, the imperative scripting language we will be compiling in 6.112. The language is described in the [language spec]({%link _pages/project/spec.md%}). Your scanner should note illegal characters, missing quotation marks, and other lexical errors with reasonable error messages. We recommand that your scanner find as many lexical errors as possible, and should be able to continue scanning after errors are found. The scanner should also filter out comments and whitespace not in string and character literals.
 
-When the `lex` subcommand is specified, the output of your compiler should be a scanned listing of the program with one line for each token in the input. Each line will contain the following information: the line number (starting at 1) on which the token appears, the type of the token (if applicable), and the token's text. Please print only the following strings as token types: `STRINGLITERAL` (specified in the spec as `<string_literal>`), `INTLITERAL` (`<int_literal>`), `BOOLEANLITERAL` (`<bool_literal>`), and `IDENTIFIER` (`<id>`).
+When you run the [`./run.sh lex` subcommand][cli], your scanner should show a list of all the tokens it found. Each line shows:
+- The line number where the token appears (starting from 1)
+- The token type (if it has one)
+- The actual text of the token
 
-For `STRINGLITERAL`, the text of the token should be the text, as appears in the original program, including the quotes and any escaped characters.
+Use these exact names for the following token types: string literals (`STRINGLITERAL`), integer literals (`INTLITERAL`), boolean literals (`BOOLEANLITERAL`), and identifiers (`IDENTIFIER`).
+
+For string literals, show the exact text as it appears in the code, including the quotes and any escape characters.
 
 Here is an example corresponding to `print("Hello, World!");`:
 
@@ -43,113 +51,100 @@ Here is an example corresponding to `print("Hello, World!");`:
 1 ;
 ```
 
-The `tests` repository contains a set of test files on which to test your scanner and the expected output for these files (stored in `.mit.lex` files). The output of your scanner should match the provided output exactly on all valid files. For invalid files, the autograder will only check that your compiler returns a non-zero exit code. We have provided a sample of what you may want your errors to look like, but the output does not need to match the provided output exactly.
+We've provided test files in the `tests` repository. You'll find the expected output for each test file in `.mit.lex` files.
+
+- For valid files: Your scanner output must match our expected output exactly
+- For invalid files: Your scanner just needs to return an error code (non-zero). We've included examples of error messages, but yours don't need to match exactly.
 
 ## Parser
 
-You will write a recursive descent parser by hand. Your parser must be able to correctly parse programs that conform to the grammar of the MITScript language. Any program that does not conform to the language grammar should be flagged with at least one error message.
+You need to write a recursive descent parser by hand. It should correctly parse any valid MITScript program. If a program doesn't follow the grammar rules, your parser should report at least one error.
 
 The boilerplate provided in the skeleton is just there to help you get started, you're free to modify it in any way that fits your needs.
 
-As output, your parser must produce an Abstract Syntax Tree (AST) with nodes roughly matching the following program constructs:
+Your parser should construct an abstract syntax tree (AST) that represents the structure of the program. We recommend that your tree should have nodes for each of the following program elements:
 
 ```
-Block ::= [Statement]
-Global ::= Name
-Assignment ::= LHS Expression
-CallStatement ::= Expression
-IfStatement ::= Condition ThenPart ElsePart
-WhileLoop ::= Condition Body
-Return ::= Expression
-FunctionDeclaration ::= [Arguments] Body
-BinaryExpression ::= LeftOperand Operator RightOperand
-UnaryExpression ::= Operand Operator
-FieldDereference ::= BaseExpression Field
-IndexExpression ::= BaseExpression Index
-Call ::= TargetExpression [Arguments]
-Record ::= Map[String, Expression]
-IntegerConstant
-StringConstant
-NoneConstant
-BooleanConstant
+Block ::= [Statement]                                           Global ::= Name
+Assignment ::= LHS Expression                                   CallStatement ::= Expression
+IfStatement ::= Condition ThenPart ElsePart                     WhileLoop ::= Condition Body
+Return ::= Expression                                           FunctionDeclaration ::= [Arguments] Body
+BinaryExpression ::= LeftOperand Operator RightOperand          UnaryExpression ::= Operand Operator
+FieldDereference ::= BaseExpression Field                       IndexExpression ::= BaseExpression Index
+Call ::= TargetExpression [Arguments]                           Record ::= Map[String, Expression]
+IntegerConstant                                                 StringConstant
+NoneConstant                                                    BooleanConstant
 ```
 
-You need to make sure that all arithmetic operators are left associative, so `(w+x+y+z)` should be parsed as `(((w+x)+y)+z)`.
+Make sure arithmetic operators are left-associative. This means `(w+x+y+z)` should be grouped as `(((w+x)+y)+z)`.
 
 You are free to implement your parser as you see fit, provided that you deliver an implementation that uses no additional parsing libraries outside of what you develop yourself.  For example, ANTLR4 (and many other tools and libraries) can be used to automatically generate parsers from a grammar specification. If you would like to use ANTLR4 (or these other tools) to automatically generate a reference, executable parser with which you then compare the outputs of which against that of your manually-developed implementation, then you are free to do so. However, your manually-developed implementation must not use any of the code from these tools in their operation (outside of potentially ANTLR4's lexing capabilities). This restriction does not prevent you from implementing your own helper code, such as implementing your [own parser combinator library](https://theorangeduck.com/page/you-could-have-invented-parser-combinators).
 
-When the `parse` subcommand is specified, the output of your program should be zero if the input is syntactically valid. Otherwise, it should return a non-zero error code signifying an error has occurred with the parser reading/accepting the input.
-
-If the program is a syntactically correct MITScript program (according to the grammar), then you should pretty-print the AST to the specified output (either stdout or a file).
-
-To develop this parser, your tasks will be:
-- Write the lexer and parser
-- Define all the types for your AST nodes
-- Define a visitor interface
-- Define a visitor that pretty prints the AST
-
-## Test Cases
-
-You should provide 10 tests named test1.mit, to test10.mit that your parser can parse correctly. Place these files under a folder called `additional-tests/` in your project repository. Your tests should provide good coverage of the constructs in the language.
-
-## Report
-
-Your report for this phase should follow the structure below.
-
-1. **Implementation.** Provide a high-level description of your approach in this phase, including:
-- An overview of your intermediate data structures (e.g., abstract syntax trees, symbol tables, tree IRs, graph IRs, etc.).
-- Your strategy for handling and reporting multiple errors.
-
-2. **Testing and Debugging.** Describe how you evaluated the correctness of your implementation:
-- Did you write any additional test cases? How did you ensure adequate coverage?
-- What methods or tools (e.g., assertions, visualizations, fuzzers, sanitizers) helped you debug?
-
-3. **Reflection and Project Status.** Provide an honest evaluation of your progress:
-- Is your implementation complete? Are there failing tests or known issues?
-- If you were to redo this phase, what would you do differently?
-- Do you have anything specific you would like TAs to review or help with?
+When you run the [`./run.sh parse` subcommand][cli], your parser should show a nicely formatted version of the AST if its valid:
+- If the input is valid: Return exit code 0 (success)
+- If there are syntax errors: Return a non-zero exit code
 
 ## Grading
 
-Your grade in this phase (5% total) is allocated as follows:
+This phase is worth 5% of your total grade:
 
-- The public and private tests of your scanner and parser: 4% (2% for scanner, 2% for parser).
-- Ten additional test cases placed under `additional-tests/`: 0.5%.
-- A *short* (3 paragraphs) report on your chosen implementation approach: 0.5%.
+- **4%** - Passing the automated tests for your scanner and parser (2% each)
+- **0.5%** - Your 10 additional test cases in the `additional-tests/` folder
+- **0.5%** - Your short report (about 3 paragraphs) explaining your approach
 
 The public test cases are available at the [`6112-fa25/tests` repository](https://github.com/6112-fa25/tests).
 
-Copying code outside of your team is strictly forbidden. While the students are allowed to inspect and discuss other students' solutions, copying code will be considered cheating. We will be strict in enforcing this policy!
+**Important:** Don't copy code from other teams. This counts as cheating. You can look at and discuss other solutions, but the code you submit must be your own work.
 
 ## Submission
 
-### Code + Tests
+### Code
 
-Please submit your Phase 1 code on Gradescope via GitHub, following the steps below:
+Submit your code and tests through Gradescope using GitHub:
 
-1. Push your code to your phase 1 GitHub repository (`6112-fa25/<YOUR KERB>_phase1`). We suggest making a separate branch for the submission, say, `phase1-submission`.
-2. Go to the Phase 1 assignment on Gradescope, and select your GitHub repository and branch.
+1. Push your code to your Phase 1 repository (`6112-fa25/<YOUR KERB>`)
+2. We recommend creating a separate branch for submission (like `phase1-submission`)
+3. Go to the Phase 1 assignment on Gradescope and select your repository and branch
 
-We have set up an autograder for the Gradescope assignment, and you should be able to see the number of test cases you passed when the autograder finishes running. The autograder is slow, and might take up to 40 minutes to run. Please see the [Autograder][autograder] page for more information about the installed software on the autograder.
+The autograder will run tests and show you how many you passed. It can take up to 40 minutes to run. Check the [Autograder][autograder] page for details about the testing environment.
 
-**We suggest making an early submission once you finish setting up your build system just to check that the autograder can correctly build your compiler.**
-You can resubmit your assignment as many times as you want before the due date, but please do not do this excessively.
+**Tip:** Submit early once your build system works to make sure the autograder can compile your code. You can submit as many times as you want before the deadline.
 
-Review the course [late policy]({% link _pages/syllabus.md %}#late-policy) for information about turning this assignment on time.
+Check the course [late policy]({% link _pages/syllabus.md %}#late-policy) for submission deadlines.
 
-We reserve the right to review your code on GitHub and may, for example, give a lower grade (than dictated by the number of tests passed) for bad-faith code (e.g. writing code specific to particular tests in the test suites).
+We'll review your code on GitHub and may reduce your grade if we find suspicious patterns (like code written specifically to pass certain tests).
 
 {: .warning }
 Make sure the `./build.sh` and `./run.sh` scripts are located at the **root** of your repository, otherwise the autograder will fail.
 
+### Tests
+
+Create 10 test files named `test1.mit` through `test10.mit` that your parser should be able to handle correctly. Put these in a folder called `additional-tests/` in your project. Try to test different features of the language.
+
 ### Report
 
-Please submit your report in the Phase 1 Report assignment on Gradescope.
+Submit a short report (about 3 paragraphs) under Phase 1 Report on Gradescope. As a soft rubric, your report should cover:
 
-## Implementation Notes
-For this phase, you do not have to worry about reclaiming memory; we will implement garbage collection in a later phase. However, if you're comfortable with smart pointers, you can use them to allocate AST nodes, as they will manage the memory for you. We will review smart pointers in recitation.
+1. **Implementation.** Explain at a high level how you implemented this phase:
+- What data structures did you use (e.g. ASTs)?
+- How did you handle and report multiple errors?
 
-Start small. This is true for every phase. Identify subtasks that you can complete end-to-end instead of trying to implement the entire phase for the entirety of MITScript. For example, in 6.031 you built an interpreter for arithmetic. MITScript has arithmetic as well and, therefore, you can check your understanding by implementing an end-to-end implementation of the phase for arithmetic (and whatever limited additional program constructs you need to get it through). For Phase 1, that means first developing a parser for just arithmetic to verify your understanding of the approach.
+2. **Testing and Debugging.** How did you check that your code works correctly?
+- Did you write extra test cases? How did you make sure you tested enough?
+- What tools or methods helped you find and fix bugs?
+
+3. **Reflection and Project Status.** Be honest about your progress:
+- Is everything working? Are there any failing tests or problems you know about?
+- If you could start over, what would you do differently?
+- Is there anything specific you'd like help with from the TAs?
+
+
+## Implementation Tips
+
+**Memory:** Don't worry about cleaning up memory in this phase—we'll add garbage collection later. If you know how to use smart pointers, you can use them for AST nodes and they'll handle memory management automatically. We'll cover smart pointers in recitation.
+
+**Start small:** Break this down into smaller pieces. Don't try to implement everything at once. Start with something simple like arithmetic expressions (you did this in 6.031 too). Build and test that first, then add more features gradually.
 
 [s3]: https://studentlife.mit.edu/s3
 [autograder]: {% link _pages/tutorials/autograder.md %}
+[cli]: {% link _pages/project/cli.md %}
