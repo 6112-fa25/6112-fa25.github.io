@@ -4,14 +4,8 @@ layout: home
 nav_order: 10
 ---
 
-<h1> Dynamic Computer Language Engineering (6.112) </h1>
+# Dynamic Computer Language Engineering (6.112)
 
-6.112 studies the design and implementation of modern, dynamic programming languages. Topics include fundamental approaches for parsing, semantics, interpretation, virtual machines, garbage collection, just-in-time machine code generation, and optimization. Course will include a semester-long, multi-person project that delivers a virtual machine that spans all of the above topics.
-
-6.112 will satisfy the AUS2 and II requirements.
-
-{: .catalog }
-> [6.1120<sub>\[6.818\]</sub> Dynamic Computer Language Engineering][catalog] \\
 > **Prereq:** [6.1020<sub>\[6.031\]</sub>][031] or [6.1910<sub>\[6.004\]</sub>][004] \\
 > **Units:** 4-4-4 \\
 > **Lecture:** _MWF1_ ([56-114][bldg56]) Recitation: _TR1_ ([36-155][bldg56])
