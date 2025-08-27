@@ -100,7 +100,7 @@ The public test cases are available at the [`6112-fa25/tests` repository](https:
 
 ### Code
 
-Submit your code and tests through Gradescope using GitHub:
+Submit your code and tests through [Gradescope under Phase 1](https://www.gradescope.com/courses/1099582/assignments/6607792) using GitHub:
 
 1. Push your code to your repository (`6112-fa25/<YOUR KERB>`)
 2. We recommend creating a separate branch for submission (like `phase1-submission`)
@@ -123,7 +123,7 @@ Create 10 test files named `test1.mit` through `test10.mit` that your parser sho
 
 ### Report
 
-Submit a short report (about 3 paragraphs) under Phase 1 Report on Gradescope. As a soft rubric, your report should cover:
+Submit a short report (about 3 paragraphs) under [Phase 1 Report on Gradescope](https://www.gradescope.com/courses/1099582/assignments/6611536). As a soft rubric, your report should cover:
 
 1. **Implementation.** Explain at a high level how you implemented this phase:
 - What data structures did you use (e.g. ASTs)?
