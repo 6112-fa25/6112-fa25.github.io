@@ -26,11 +26,6 @@ You might find lecture slides/notes from other publicly available courses useful
 
 1. [EPFL's Advanced Compiler Design course](https://cs420.epfl.ch/archive/21/index.html).
 
-If you are hungry for more advanced material, take a look at this:
-
-{:style="counter-reset:step-counter 2"}
-1. [Cornell's self-guided, online Advanced Compilers course](https://www.cs.cornell.edu/courses/cs6120/2020fa/self-guided/).
-
 Of course, do not forget this class's sister in the spring semester: [6.1100<sub>[6.035]</sub> Computer Language Engineering][dynlang].
 
 For more theoretical approaches to programming language design, theory, and implementation, look into these classes:

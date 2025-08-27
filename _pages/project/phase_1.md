@@ -102,7 +102,7 @@ The public test cases are available at the [`6112-fa25/tests` repository](https:
 
 Submit your code and tests through Gradescope using GitHub:
 
-1. Push your code to your Phase 1 repository (`6112-fa25/<YOUR KERB>`)
+1. Push your code to your repository (`6112-fa25/<YOUR KERB>`)
 2. We recommend creating a separate branch for submission (like `phase1-submission`)
 3. Go to the Phase 1 assignment on Gradescope and select your repository and branch
 
