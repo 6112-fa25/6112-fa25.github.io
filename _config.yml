@@ -60,3 +60,6 @@ callouts:
   catalog:
     title: Catalog Description
     color: grey-dk
+  tldr:
+    title: TL;DR
+    color: green

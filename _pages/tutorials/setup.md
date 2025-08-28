@@ -4,9 +4,22 @@ parent: Tutorials
 nav_order: 10
 ---
 
-All phases of the project will be completed in C++. The skeleton repo may be found at <https://github.com/6112-fa25/skeleton>.
+All phases of the project will be completed in C++. By default, the project skeleton is configured to use C++20. If you'd like to use newer versions of the C++ standard, you are free to do so, but make sure the features you're using are supported.
 
 {% include toc.html %}
+
+## TL;DR
+Here is the summary of the list of commands you need to know to clone, build, run, and test your project.
+
+```bash
+mkdir -p ~/Desktop/6.112                                                            # Create a class folder on your Desktop
+cd ~/Desktop/6.112/                                                                 # Change directories into class folder
+git clone --recursive-submodules -j8 git@github.com:6112-fa25/<YOUR KERB>.git       # Clone your repository
+./docker.sh                                                                         # OPTIONAL: Launches docker container
+./build.sh                                                                          # Builds your project
+./test.sh                                                                           # Runs tests
+./run.sh                                                                            # Run your project
+```
 
 ## Cloning
 
@@ -32,13 +45,11 @@ Another alternative is using a [Docker container](https://docs.docker.com/engine
 
 You can automatically build and launch a Docker container using the `docker.sh` shell script.
 
-The recommended way to build the project is using Make, as it will make your development faster. However, we also provide a CMake build setup that you might be more familiar with. If you're not familiar with either, we recommend you use Make.
+The recommended way to build the project is using CMake, as it will make your development faster. However, because teaching CMake is not the focus of this class, we also provide a Makefile that you might be more familiar with. If you're not familiar with either, we recommend you use CMake.
 
 The project is configured to use C++20 by default. If you'd like to use other versions, you are free to do so, but if your workflow breaks we can only provide limited assistance.
 
-**Makefile Users**: You can build and run your project using the `build.sh` and `run.sh` scripts respectively.
-
-**CMake Users**: You can build and run your project using the `cmake-build.sh` and `cmake-run.sh` scripts respectively.
+Use the `build.sh` script to build your project. Building places a debug binary under `build/cmake/debug/mitscript` and a release binary under `build/cmake/release/mitscript`. The debug binary is compiled with [Google sanitizers](https://github.com/google/sanitizers) enabled which may be helpful for catching some memory-related and undefined behavior bugs at runtime. The release binary is compiled with the `-O3` optimization flag turned on.
 
 ## Testing
 The project includes a submodule containing the [`6112-fa25/tests`](https://github.com/6112-fa25/tests/) repository under the `tests/` directory. You should have initialized the submodule when you ran the clone command.
@@ -47,7 +58,7 @@ You may use the script `test.sh` as a launching point for running test cases. We
 
 You aren't required to write any unit tests but are encouraged to do so, especially in later parts when you want to verify smaller parts of the functionality of your interpreter.
 
-## Structure
+## Running
 
 The program entry point is located in `src/main.cpp`. `src/cli.{hpp,cpp}` implements the command-line interface describes in [Command Line Reference](/project#command-line-reference).
 
