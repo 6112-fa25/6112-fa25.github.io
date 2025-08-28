@@ -20,9 +20,9 @@ A token can be a symbol (``*`` or ``{``), a keyword (``if``, or ``while``), an i
 
 Non-tokens (such as whitespace or comments) are discarded. Malformed tokens (e.g. an unterminated string literal) must be reported.
 
-A *parser* takes a sequence of tokens as input and checks to make sure they conform to the language specification. In order to pass this check, the input must have all matching braces, semicolons, etc. Types, variable names, and function names are not verified. A parser outputs a *syntax tree*, a tree representation of the program.
+A *parser* takes a sequence of tokens as input and checks to make sure they conform to the language specification. In order to pass this check, the input must have all matching braces, semicolons, etc. A parser outputs a *syntax tree*, a tree representation of the program.
 
-The [language specification]({% link _pages/project/spec.md %}) describes the concrete syntax of the language, which you will need to separate into a scanner specification and a parser specification. You will then implement a hand-written scanner and recursive descent parser in C++. We disallow using parser generators such as ANTLR4 in this phase. Creating and using your own parser combinator library is also OK.
+The [language specification]({% link _pages/project/spec.md %}) describes the concrete syntax of the language, which you will need to separate into a scanner specification and a parser specification. You will then implement a hand-written scanner and recursive descent parser in C++. We allow using lexer generators such as ANTLR4. We disallow using parser generators such as ANTLR4. Creating and using your own parser combinator library is also OK.
 
 ## Phase 2: Interpretation
 
