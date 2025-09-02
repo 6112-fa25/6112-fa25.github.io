@@ -2,6 +2,7 @@
 title: Phase 1
 parent: Project
 nav_order: 10
+published: false
 ---
 
 This phase consists of two segments: lexical analysis (aka scanning or lexing) and syntactic analysis (aka parsing).
