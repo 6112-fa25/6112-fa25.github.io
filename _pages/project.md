@@ -65,7 +65,7 @@ The last class will be the “Virtual Machine Derby” at which your group will 
 
 ## Grading
 
-As a reminder from the syllabus, the grading for the project is distributed as follows:
+<!-- As a reminder from the syllabus, the grading for the project is distributed as follows:
 
 | Component                                                    | Weight |
 | ------------------------------------------------------------ | ------ |
@@ -73,7 +73,7 @@ As a reminder from the syllabus, the grading for the project is distributed as f
 | Project phase 2 (interpretation)                             | 25%    |
 | Project phase 3 (memory management)                          | 15%    |
 | Project phase 4 (virtual machine)                            | 20%    |
-| Project phase 5 (derby)                                      | 35%    |
+| Project phase 5 (derby)                                      | 35%    | -->
 
 For each phase, you are required to submit your *design report*, *complete source code* (including all files needed to build your project), and *additional test cases*. Your projects will be submitted via Gradescope. Do not include compiled files. Instead, you repo should contain an executable file called `build.sh` in the top-level directory which will compile your code. These files are provided for you in the skeleton code; you may modify them if you need to.
 
