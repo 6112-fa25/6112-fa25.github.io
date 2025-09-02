@@ -69,8 +69,8 @@ As a reminder from the syllabus, the grading for the project is distributed as f
 
 | Component                                                    | Weight |
 | ------------------------------------------------------------ | ------ |
-| Project phase 1 (lexing and parsing)                         | 5%     |
-| Project phase 2 (interpretation)                             | 20%    |
+| Project phase 1 (lexing and parsing)                         | 0%     |
+| Project phase 2 (interpretation)                             | 25%    |
 | Project phase 3 (memory management)                          | 15%    |
 | Project phase 4 (virtual machine)                            | 20%    |
 | Project phase 5 (derby)                                      | 35%    |

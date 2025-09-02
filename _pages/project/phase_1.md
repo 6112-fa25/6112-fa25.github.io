@@ -86,11 +86,15 @@ When you run the [`./run.sh parse` subcommand][cli], your parser should show a n
 
 ## Grading
 
-This phase is worth 5% of your total grade:
+<!-- This phase is worth 5% of your total grade: -->
+This phase is optional, so it is worth 0% of your total grade:
 
-- **4%** - Passing the automated tests for your scanner and parser (2% each)
+<!-- - **4%** - Passing the automated tests for your scanner and parser (2% each)
 - **0.5%** - Your 10 additional test cases in the `additional-tests/` folder
-- **0.5%** - Your short report (about 3 paragraphs) explaining your approach
+- **0.5%** - Your short report (about 3 paragraphs) explaining your approach -->
+- Passing the automated tests for your scanner and parser (2% each)
+- Your 10 additional test cases in the `additional-tests/` folder
+- Your short report (about 3 paragraphs) explaining your approach
 
 The public test cases are available at the [`6112-fa25/tests` repository](https://github.com/6112-fa25/tests).
 
