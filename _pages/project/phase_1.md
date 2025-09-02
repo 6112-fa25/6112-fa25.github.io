@@ -145,9 +145,9 @@ Submit a short report (about 3 paragraphs) under [Phase 1 Report on Gradescope](
 
 ## Implementation Tips
 
-**Memory:** Don't worry about cleaning up memory in this phase—we'll add garbage collection later. If you know how to use smart pointers, you can use them for AST nodes and they'll handle memory management automatically. We'll cover smart pointers in recitation.
+For this phase, you do not have to worry about reclaiming memory; we will implement garbage collection in a later phase. However, if you're comfortable with smart pointers, you can use them to allocate AST nodes, as they will manage the memory for you. We will review smart pointers in recitation.
 
-**Start small:** Break this down into smaller pieces. Don't try to implement everything at once. Start with something simple like arithmetic expressions (you did this in 6.031 too). Build and test that first, then add more features gradually.
+Start small. This is true for every phase. Identify subtasks that you can complete end-to-end instead of trying to implement the entire phase for the entirety of MITScript. For example, in 6.031 you built an interpreter for arithmetic. MITScript has arithmetic as well and, therefore, you can check your understanding by implementing an end-to-end implementation of the phase for arithmetic (and whatever limited additional program constructs you need to get it through). For Phase 1, that means first developing a parser for just arithmetic to verify your understanding of the approach.
 
 [s3]: https://studentlife.mit.edu/s3
 [autograder]: {% link _pages/tutorials/autograder.md %}
