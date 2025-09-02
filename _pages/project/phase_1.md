@@ -2,10 +2,11 @@
 title: Phase 1
 parent: Project
 nav_order: 10
-published: false
 ---
 
-This phase consists of two segments: lexical analysis (aka scanning or lexing) and syntactic analysis (aka parsing).
+Phase 1 will be released soon.
+
+<!-- This phase consists of two segments: lexical analysis (aka scanning or lexing) and syntactic analysis (aka parsing).
 
 {% include toc.html %}
 
@@ -152,4 +153,4 @@ Start small. This is true for every phase. Identify subtasks that you can comple
 
 [s3]: https://studentlife.mit.edu/s3
 [autograder]: {% link _pages/tutorials/autograder.md %}
-[cli]: {% link _pages/project/cli.md %}
+[cli]: {% link _pages/project/cli.md %} -->
