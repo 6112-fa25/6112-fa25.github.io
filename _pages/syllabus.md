@@ -55,15 +55,15 @@ _Lectures_ will cover the fundamental concepts and structures of dynamic program
 
 There will be weeks that have few or no lectures, especially as we draw closer to project deadlines. This year, we are projecting roughly 8 weeks of lectures in total. We will also announce urgent changes on [Piazza][piazza].
 
+#### Missed Classes
+
+If you have taken [6.110](https://6110-sp25.github.io), you may be familiar with the re-lecture videos which are video recordings of lecture content. 6.112 will not have any re-lectures for this offering. Lecture slides and recitation materials will still be available on this website; however, you are personally responsible for catching up on any missed content on your own.
+
 ## Office Hours
 We will not hold office hours for the first week of classes. The particular room and times will be released by the end of the first week of class.
 
 ## Quiz
 One quiz will be held during class time towards the end of the semester. The particular date will be released by the end of the first week of the class. More information about quizzes, including practice material, will be released closer to the quiz dates.
-
-#### Missed Classes
-
-If you have taken [6.110](https://6110-sp25.github.io), you may be familiar with the re-lecture videos which are video recordings of lecture content. 6.112 will not have any re-lectures for this offering. Lecture slides and recitation materials will still be available on this website; however, you are personally responsible for catching up on any missed content on your own.
 
 ## Participation
 
