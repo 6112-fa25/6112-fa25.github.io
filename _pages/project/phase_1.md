@@ -88,12 +88,8 @@ When you run the [`./run.sh parse` subcommand][cli], your parser should show a n
 
 ## Grading
 
-<!-- This phase is worth 5% of your total grade: -->
 This phase is optional, so it is worth 0% of your total grade:
 
-<!-- - **4%** - Passing the automated tests for your scanner and parser (2% each)
-- **0.5%** - Your 10 additional test cases in the `additional-tests/` folder
-- **0.5%** - Your short report (about 3 paragraphs) explaining your approach -->
 - Passing the automated tests for your scanner and parser (2% each)
 - Your 10 additional test cases in the `additional-tests/` folder
 - Your short report (about 3 paragraphs) explaining your approach
@@ -149,8 +145,8 @@ Submit a short report (about 3 paragraphs) under [Phase 1 Report on Gradescope](
 
 For this phase, you do not have to worry about reclaiming memory; we will implement garbage collection in a later phase. However, if you're comfortable with smart pointers, you can use them to allocate AST nodes, as they will manage the memory for you. We will review smart pointers in recitation.
 
-Start small. This is true for every phase. Identify subtasks that you can complete end-to-end instead of trying to implement the entire phase for the entirety of MITScript. For example, in 6.031 you built an interpreter for arithmetic. MITScript has arithmetic as well and, therefore, you can check your understanding by implementing an end-to-end implementation of the phase for arithmetic (and whatever limited additional program constructs you need to get it through). For Phase 1, that means first developing a parser for just arithmetic to verify your understanding of the approach.
+Start small. This is true for every phase. Identify subtasks that you can complete end-to-end instead of trying to implement the entire phase for the entirety of MITScript. For example, in 6.031 you built an interpreter for arithmetic. MITScript has arithmetic as well and, therefore, you can check your understanding by implementing an end-to-end implementation of the phase for arithmetic (and whatever limited additional program constructs you need to get it through). For Phase 1, that means first developing a parser for just arithmetic to verify your understanding of the approach. -->
 
 [s3]: https://studentlife.mit.edu/s3
 [autograder]: {% link _pages/tutorials/autograder.md %}
-[cli]: {% link _pages/project/cli.md %} -->
+[cli]: {% link _pages/project/cli.md %}
