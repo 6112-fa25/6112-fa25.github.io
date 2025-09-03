@@ -14,7 +14,7 @@ Here is the summary of the list of commands you need to know to clone, build, ru
 ```bash
 mkdir -p ~/Desktop/6.112                                                            # Create a class folder on your Desktop
 cd ~/Desktop/6.112/                                                                 # Change directories into class folder
-git clone --recursive-submodules -j8 git@github.com:6112-fa25/<YOUR KERB>.git       # Clone your repository
+git clone --recurse-submodules -j8 git@github.com:6112-fa25/<YOUR KERB>.git       # Clone your repository
 ./docker.sh                                                                         # OPTIONAL: Launches docker container
 ./build.sh                                                                          # Builds your project
 ./test.sh                                                                           # Runs tests
@@ -26,7 +26,7 @@ git clone --recursive-submodules -j8 git@github.com:6112-fa25/<YOUR KERB>.git   
 Create and navigate to a directory where you'd like your project files to be stored and run the following commands. I recommend navigating to a location like `~/Desktop/6.112/` so it is easier to find.
 
 ```bash
-git clone --recursive-submodules -j8 git@github.com:6112-fa25/<YOUR KERB>.git
+git clone --recurse-submodules -j8 git@github.com:6112-fa25/<YOUR KERB>.git
 ```
 
 This should initialize your phase 1 project directory with the skeleton code. If you get `Permission denied (publickey)`, make sure you have set up an SSH key with GitHub. If you do not know how to set up an SSH key with GitHub, read the beginning of the [Git tutorial]({% link _pages/tutorials/git.md %}).
