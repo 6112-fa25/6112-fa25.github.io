@@ -92,8 +92,6 @@ Your grade is based upon three components: your virtual machine (85%), a quiz (1
 | Quiz                                 | 10%    |
 | Participation (surveys, miniquizzes) | 5%     |
 
-Keep in mind, although officialy phase 1 has a weight of 0%, you will need to complete phase 1 in entirety in order to pass phase 2. You should think of the grade for phase 2 as being a combined grade for both phases.
-
 ## Late Policy
 
 We will accept late final submissions for any reason up to 72 hours after the deadline. 10% will be deducted for a submission that's up to 24 hours late, 20% will be deducted for a submission that's up to 48 hours late, and 30% will be deducted for a submission that's up to 72 hours late. Late submissions will not be accepted for extra credit checkpoints but only for the final submission of each phase (i.e., the submission that's due at the final deadline).
