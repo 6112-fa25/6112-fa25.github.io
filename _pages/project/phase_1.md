@@ -54,7 +54,7 @@ Here is an example corresponding to `print("Hello, World!");`:
 We've provided test files in the `tests` repository. You'll find the expected output for each test file in `.mit.lex` files.
 
 - For valid files: Your scanner output must match our expected output exactly
-- For invalid files: Your scanner just needs to return an error code (non-zero). We've included examples of error messages, but yours don't need to match exactly.
+- For invalid files: Your scanner just needs to return an error code (non-zero).
 
 ## Parser
 
