@@ -1,0 +1,62 @@
+// Calendar styling for just-the-docs theme
+.calendar-wrapper {
+  margin: 2rem 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background: white;
+  border: 1px solid var(--border-color, #e1e4e8);
+}
+
+.calendar-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1rem 1.5rem;
+  margin: 0;
+  
+  h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+}
+
+.calendar-embed {
+  position: relative;
+  padding-bottom: 56.25%; // 16:9 aspect ratio
+  height: 0;
+  overflow: hidden;
+  
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .calendar-wrapper {
+    margin: 1rem -1rem; // Extend to page edges on mobile
+    border-radius: 0;
+  }
+  
+  .calendar-embed {
+    padding-bottom: 75%; // Taller aspect ratio for mobile
+  }
+}
+
+// Dark mode support (if using just-the-docs dark theme)
+[data-theme="dark"] {
+  .calendar-wrapper {
+    background: var(--body-background-color);
+    border-color: var(--border-color);
+    
+    iframe {
+      filter: invert(1) hue-rotate(180deg);
+    }
+  }
+}
