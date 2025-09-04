@@ -86,7 +86,7 @@ When you run the [`./run.sh parse` subcommand][cli], your parser should show a n
 
 ## Grading
 
-This phase is optional, so it is worth 5% of your total grade:
+This phase is worth 5% of your total grade:
 
 - Passing the automated tests for your scanner and parser
 - Your 10 additional test cases in the `additional-tests/` folder
