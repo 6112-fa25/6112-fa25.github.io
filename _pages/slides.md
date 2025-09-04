@@ -11,7 +11,7 @@ This page contains links to the presentations and supplementary material that ac
 
 {:style="counter-reset:step-counter 0"}
 
-1. [L1: Course Overview](https://docs.google.com/presentation/d/1I0zSWS4V_6rlz057_EQbvz-XrKceAa6h/edit?slide=id.p1#slide=id.p1)
+1. [L1: Course Overview](https://docs.google.com/presentation/d/1HyQ9kR7fsM_D_NQN075HVCCJaFQKURrP/edit?usp=sharing&ouid=113177593466433879946&rtpof=true&sd=true)
 1. [L2: Lexing](https://docs.google.com/presentation/d/1GfQAfgnFYcsL-xZo70ZZ4nsnZrhKzY-5/edit?rtpof=true\&sd=true)
 1. [L3: Parsing I](https://docs.google.com/presentation/d/1Gh9RvAiC2QiP9Pso_VzkocM__dsBKIkA/edit?usp=sharing&ouid=100124114539204374075&rtpof=true&sd=true)
 1. [L4: Parsing II](https://docs.google.com/presentation/d/1IEs1x01X3fLySKTEKGT4oFxFXCr3of1_/edit?usp=sharing&ouid=100124114539204374075&rtpof=true&sd=true)

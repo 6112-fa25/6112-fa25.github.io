@@ -79,16 +79,19 @@ If you have a conflict with the quiz dates, please let the course staff know as 
 
 Your grade will be based upon three components: your virtual machine, class participation, and a quiz. We antipate that if you complete the project satisfactorily, you will receive an A in the class. More detailed rubric will be released by the end of the first week of class.
 
-<!-- Your grade is based upon two components: your virtual machine (95%) and mini-quizzes/surveys/class participation (5%). We anticipate that, if you complete the project satisfactorily, you will receive an A in the class.
+Your grade is based upon two components: your virtual machine (85%), a quiz (10%), and mini-quizzes/surveys/class participation (5%). We anticipate that, if you complete the project satisfactorily, you will receive an A in the class.
 
-| Component                                                    | Weight |
-| ------------------------------------------------------------ | ------ |
-| Project phase 1 (lexing and parsing)                         | 0%     |
-| Project phase 2 (interpretation)                             | 25%    |
-| Project phase 3 (memory management)                          | 15%    |
-| Project phase 4 (virtual machine)                            | 20%    |
-| Project phase 5 (derby)                                      | 35%    |
-| Participation (surveys, miniquizzes)                         | 5%     | -->
+| Component                            | Weight |
+| ------------------------------------ | ------ |
+| Project phase 1 (lexing and parsing) | 0%     |
+| Project phase 2 (interpretation)     | 25%    |
+| Project phase 3 (memory management)  | 20%    |
+| Project phase 4 (virtual machine)    | 15%    |
+| Project phase 5 (derby)              | 35%    |
+| Quiz                                 | 10%    |
+| Participation (surveys, miniquizzes) | 5%     |
+
+Keep in mind, although officialy phase 1 has a weight of 0%, you will need to complete phase 1 in entirety in order to pass phase 2. You should think of the grade for phase 2 as being a combined grade for both phases.
 
 ## Late Policy
 

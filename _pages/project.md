@@ -65,6 +65,8 @@ The last class will be the “Virtual Machine Derby” at which your group will 
 
 ## Grading
 
+For the grading rubric, read the ["Grading" section from the syllabus][syllabus#grading].
+
 <!-- As a reminder from the syllabus, the grading for the project is distributed as follows:
 
 | Component                                                    | Weight |
@@ -98,3 +100,4 @@ Your design report and additional test cases will make up a portion of your grad
 
 [phase_1]: {% link _pages/project/phase_1.md %}
 [phase_2]: {% link _pages/project/phase_2.md %}
+[syllabus]: {% link _pages/project/syllabus.md %}
