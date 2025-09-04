@@ -77,9 +77,7 @@ If you have a conflict with the quiz dates, please let the course staff know as 
 
 ## Grading
 
-Your grade will be based upon three components: your virtual machine, class participation, and a quiz. We antipate that if you complete the project satisfactorily, you will receive an A in the class. More detailed rubric will be released by the end of the first week of class.
-
-Your grade is based upon two components: your virtual machine (85%), a quiz (10%), and mini-quizzes/surveys/class participation (5%). We anticipate that, if you complete the project satisfactorily, you will receive an A in the class.
+Your grade is based upon three components: your virtual machine (85%), a quiz (10%), and mini-quizzes/surveys/class participation (5%). We anticipate that, if you complete the project satisfactorily, you will receive an A in the class.
 
 | Component                            | Weight |
 | ------------------------------------ | ------ |
