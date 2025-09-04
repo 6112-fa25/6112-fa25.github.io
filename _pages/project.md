@@ -100,4 +100,4 @@ Your design report and additional test cases will make up a portion of your grad
 
 [phase_1]: {% link _pages/project/phase_1.md %}
 [phase_2]: {% link _pages/project/phase_2.md %}
-[syllabus]: {% link _pages/project/syllabus.md %}
+[syllabus]: {% link _pages/syllabus.md %}
