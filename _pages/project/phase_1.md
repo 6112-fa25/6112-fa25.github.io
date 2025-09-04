@@ -4,8 +4,6 @@ parent: Project
 nav_order: 10
 ---
 
-Phase 1 will be released soon.
-
 This phase consists of two segments: lexical analysis (aka scanning or lexing) and syntactic analysis (aka parsing).
 
 {% include toc.html %}
