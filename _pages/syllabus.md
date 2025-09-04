@@ -81,10 +81,10 @@ Your grade is based upon three components: your virtual machine (85%), a quiz (1
 
 | Component                            | Weight |
 | ------------------------------------ | ------ |
-| Project phase 1 (lexing and parsing) | 0%     |
-| Project phase 2 (interpretation)     | 25%    |
-| Project phase 3 (memory management)  | 20%    |
-| Project phase 4 (virtual machine)    | 15%    |
+| Project phase 1 (lexing and parsing) | 5%     |
+| Project phase 2 (interpretation)     | 20%    |
+| Project phase 3 (memory management)  | 10%    |
+| Project phase 4 (virtual machine)    | 25%    |
 | Project phase 5 (derby)              | 35%    |
 | Quiz                                 | 10%    |
 | Participation (surveys, miniquizzes) | 5%     |
