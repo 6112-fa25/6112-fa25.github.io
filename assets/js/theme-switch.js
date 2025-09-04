@@ -6,6 +6,24 @@ function getTheme() {
   return document.documentElement.classList.contains('dark-mode') ? 'dark' : 'light';
 }
 
+function updateCalendarTheme() {
+  const isDark = getTheme() !== 'dark';
+  const calendars = document.querySelectorAll('.calendar-embed iframe');
+  
+  calendars.forEach(iframe => {
+    let src = iframe.src;
+    if (isDark) {
+      src = src.replace('bgcolor=%23ffffff', 'bgcolor=%23121212');
+      iframe.parentElement.classList.add('dark-theme');
+    } else {
+      src = src.replace('bgcolor=%23121212', 'bgcolor=%23ffffff');
+      iframe.parentElement.classList.remove('dark-theme');
+    }
+    iframe.src = src;
+  });
+}
+
+
 window.addEventListener("DOMContentLoaded", function() {
   const toggleDarkMode = document.getElementById("theme-toggle");
 
@@ -24,6 +42,7 @@ window.addEventListener("DOMContentLoaded", function() {
   });
 
   function setTheme(theme) {
+    updateCalendarTheme();
     jtd.setTheme(theme);
     if (theme === 'dark') {
       toggleDarkMode.innerHTML = `<svg width='18px' height='18px'><use href="#svg-sun"></use></svg>`;
@@ -36,24 +55,3 @@ window.addEventListener("DOMContentLoaded", function() {
     }
   }
 });
-
-// Add to your site's JS
-function updateCalendarTheme() {
-  const isDark = getTheme();
-  const calendars = document.querySelectorAll('.calendar-embed iframe');
-  
-  calendars.forEach(iframe => {
-    let src = iframe.src;
-    if (isDark) {
-      src = src.replace('bgcolor=%23ffffff', 'bgcolor=%23121212');
-      iframe.parentElement.classList.add('dark-theme');
-    } else {
-      src = src.replace('bgcolor=%23121212', 'bgcolor=%23ffffff');
-      iframe.parentElement.classList.remove('dark-theme');
-    }
-    iframe.src = src;
-  });
-}
-
-// Run on theme change
-document.addEventListener('DOMContentLoaded', updateCalendarTheme);
