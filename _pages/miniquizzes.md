@@ -9,4 +9,4 @@ The mini-quizzes cover material from the lectures, and are graded for *completio
 
 1. [Miniquiz #1 (due Sep 5, 11:59 PM)](https://www.gradescope.com/courses/1099582/assignments/6618088)
 1. [Miniquiz #2 (due Sep 8, 11:59 PM)](https://www.gradescope.com/courses/1099582/assignments/6676585)
-1. [Miniquiz #3 (due Sep 8, 11:59 PM)](https://www.gradescope.com/courses/1099582/assignments/6676625)
+1. [Miniquiz #3 (due Sep 9, 11:59 PM)](https://www.gradescope.com/courses/1099582/assignments/6676625)
