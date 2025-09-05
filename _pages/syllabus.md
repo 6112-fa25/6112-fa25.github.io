@@ -77,9 +77,6 @@ If you have a conflict with the quiz dates, please let the course staff know as 
 
 ## Grading
 
-{: .announcement }
-> We are aware of the bug below where all the project phases add up to 95% instead of 85%. We will fix this as soon as possible.
-
 Your grade is based upon three components: your virtual machine (85%), a quiz (10%), and mini-quizzes/surveys/class participation (5%). We anticipate that, if you complete the project satisfactorily, you will receive an A in the class.
 
 | Component                            | Weight |
@@ -87,8 +84,8 @@ Your grade is based upon three components: your virtual machine (85%), a quiz (1
 | Project phase 1 (lexing and parsing) | 5%     |
 | Project phase 2 (interpretation)     | 20%    |
 | Project phase 3 (memory management)  | 10%    |
-| Project phase 4 (virtual machine)    | 25%    |
-| Project phase 5 (derby)              | 35%    |
+| Project phase 4 (virtual machine)    | 20%    |
+| Project phase 5 (derby)              | 30%    |
 | Quiz                                 | 10%    |
 | Participation (surveys, miniquizzes) | 5%     |
 
