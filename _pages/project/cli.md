@@ -8,7 +8,7 @@ Your `run.sh` script should have the following command line interface. The autog
 
 ```
 ./run.sh [SUBCOMMAND] [input_file] [OPTIONS]
-****
+
 POSITIONALS:
   input_file TEXT             Path to input file, use '-' for stdin
 
