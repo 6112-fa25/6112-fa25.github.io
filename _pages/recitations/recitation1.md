@@ -85,8 +85,6 @@ You **should** implement the Visitor pattern for your AST data structure in this
 
 We'll cover the Visitor pattern in more detail in the following two recitations.
 
----
-
 ### Submission and Grading
 Phase 1 is worth **5%** of the overall grade in this course. It's due at **10pm** (not **11:59pm**) on **Monday, September 22nd**.
 
