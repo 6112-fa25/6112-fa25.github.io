@@ -1,8 +1,5 @@
-To host the website locally:
 ```
-bundle update --bundler
-bundle install
-bundle exec jekyll serve
+bundler update --bundler
+bundler install
+bundler exec jekyll serve
 ```
-
-The website will be available at <http://localhost:4000>.
