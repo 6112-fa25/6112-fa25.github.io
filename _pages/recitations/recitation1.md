@@ -18,7 +18,8 @@ Today we'll go over Phase 1, mostly covering logistics and deliverables. We'll a
 * Going forward, miniquizzes will be assigned at the start of each lecture day and will *(generally)* be due at **1pm** the following weekday.
 
 #### Office Hours
-* Office Hours are still being sorted out. The intention is that office hours will be every Tuesday and Thursday from 4-6pm.
+* Permanent Office Hours are still being sorted out. The intention is that office hours will be every Tuesday and Thursday from 4-6pm.
+* Tomorrow, Tuesday, September 9th, office hours will be temporarily held in 32-397 from 4-6pm.
 
 
 ## Phase 1 Overview
