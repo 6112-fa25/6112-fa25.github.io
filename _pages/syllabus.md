@@ -6,8 +6,6 @@ nav_order: 10
 
 # Dynamic Computer Language Engineering (6.112)
 
----
-
 **Prereq:** [6.1020<sub>\[6.031\]</sub>][031] or [6.1910<sub>\[6.004\]</sub>][004] \\
 **Units:** 4-4-4 \\
 **Lecture:** _MWF1_ ([56-114][bldg56]) \\
