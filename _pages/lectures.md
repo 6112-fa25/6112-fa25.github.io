@@ -1,13 +1,9 @@
 ---
-title: Slides
-nav_order: 60
+title: Lectures
+nav_order: 85
 ---
 
-This page contains links to the presentations and supplementary material that accompany each class session throughout the semester.
-
-{%include toc.html %}
-
-## Lectures
+This page contains links to the presentations and supplementary material that accompany each lecture throughout the semester.
 
 {:style="counter-reset:step-counter 0"}
 
@@ -35,17 +31,3 @@ This page contains links to the presentations and supplementary material that ac
 1. [L22: Register Allocation II](https://docs.google.com/presentation/d/1zkkMa9ackhe2y-FpZIyfT3xeRVgijW_T/edit?usp=drive_link&ouid=113177593466433879946&rtpof=true&sd=true)
 1. [L23: Static Analysis I](https://docs.google.com/presentation/d/1UIZDzomCCMJuESkg1Rf5mfKSDAulNPnE/edit?usp=drive_link&ouid=113177593466433879946&rtpof=true&sd=true)
 1. [L24: Static Analysis II](https://docs.google.com/presentation/d/1naGkLG-xsRFB22M1FUZSssrE3JFVBhmA/edit?usp=drive_link&ouid=113177593466433879946&rtpof=true&sd=true)
-
-## Recitations
-{:style="counter-reset:step-counter 0"}
-
-1. R1: Phase 1 Overview
-1. R2: Intro to C++ I
-1. R3: Intro to C++ II
-1. R4: Phase 2 Overview
-1. R5: Interpreting MITScript
-1. R6: Phase 3 Overview
-1. R7: Phase 4 Overview
-1. R8: Phase 5 Overview
-1. R9: Benchmarking
-1. R10: x64asm

@@ -54,6 +54,9 @@ callouts:
   announcement:
     title: Announcement
     color: blue
+  goal:
+    title: Goal
+    color: green
   weekly:
     title: Weekly updates
     color: green

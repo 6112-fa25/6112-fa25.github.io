@@ -6,11 +6,16 @@ nav_order: 10
 
 # Dynamic Computer Language Engineering (6.112)
 
-> **Prereq:** [6.1020<sub>\[6.031\]</sub>][031] or [6.1910<sub>\[6.004\]</sub>][004] \\
-> **Units:** 4-4-4 \\
-> **Lecture:** _MWF1_ ([56-114][bldg56]) Recitation: _TR1_ ([36-155][bldg56])
->
-> Studies the design and implementation of modern, dynamic programming languages. Topics include fundamental approaches for parsing, semantics and interpretation, virtual machines, garbage collection, just-in-time machine code generation, and optimization. Includes a semester-long, group project that delivers a virtual machine that spans all of these topics.
+---
+
+**Prereq:** [6.1020<sub>\[6.031\]</sub>][031] or [6.1910<sub>\[6.004\]</sub>][004] \\
+**Units:** 4-4-4 \\
+**Lecture:** _MWF1_ ([56-114][bldg56]) \\
+**Recitation:** _TR1_ ([36-155][bldg56])
+
+Studies the design and implementation of modern, dynamic programming languages. Topics include fundamental approaches for parsing, semantics and interpretation, virtual machines, garbage collection, just-in-time machine code generation, and optimization. Includes a semester-long, group project that delivers a virtual machine that spans all of these topics.
+
+---
 
 ## Staff
 

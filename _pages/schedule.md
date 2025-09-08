@@ -14,11 +14,11 @@ Nominally, class meetings are one hour long and take place at the following time
 
 <div class="calendar-wrapper">
   <div class="calendar-embed">
-    <iframe 
+    <iframe
       src="https://calendar.google.com/calendar/embed?src=c_ab400760b4c4bdbaabe24285f970a70c6e0cba43c26ae2a151ee2857dc625c43@group.calendar.google.com&ctz=America/New_York&mode=MONTH&showTitle=0&showNav=1&showDate=1&showTabs=0&showCalendars=1&showTz=0&bgcolor=%23ffffff"
-      width="100%" 
-      height="1500" 
-      frameborder="0" 
+      width="100%"
+      height="1500"
+      frameborder="0"
       scrolling="no"
       loading="lazy">
     </iframe>
@@ -44,5 +44,5 @@ Nominally, class meetings are one hour long and take place at the following time
 <!-- | Dec 8 <br /> **No Class** <br /> <u>Phase 5 Due</u>                                                                       |                                                                            | Dec 10 <br /> **Derby** <br /> *Last day of classes*                                      |                                                                                                                               |                                                                                                                                           | -->
 
 
-[lecs]: {% link _pages/slides.md %}#lectures
-[recs]: {% link _pages/slides.md %}#recitations
+[lecs]: {% link _pages/lectures.md %}#lectures
+[recs]: {% link _pages/lectures.md %}#recitations
