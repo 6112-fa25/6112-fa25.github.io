@@ -66,7 +66,7 @@ If you have taken [6.110](https://6110-sp25.github.io), you may be familiar with
 We will not hold office hours for the first week of classes. The particular room and times will be released by the end of the first week of class.
 
 ## Quiz
-One quiz will be held during class time towards the end of the semester. The particular date will be released by the end of the first week of the class. More information about quizzes, including practice material, will be released closer to the quiz dates.
+One quiz will be held during class time towards the end of the semester. Please check the [schedule][schedule] for the particular date. More information about quizzes, including practice material, will be released closer to the quiz dates.
 
 ## Participation
 
