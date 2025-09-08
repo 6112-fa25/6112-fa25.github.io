@@ -4,7 +4,7 @@ parent: Recitations
 nav_order: 10
 ---
 
-Today we'll cover the Phase 1 requirements, mostly covering logistics and deliverables. In the second half, we'll discuss and introduce the C++ programming language.
+Today we'll go over Phase 1, mostly covering logistics and deliverables. We'll also discuss and introduce the C++ programming language.
 
 
 {% include toc.html %}
