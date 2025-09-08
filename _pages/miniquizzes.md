@@ -10,6 +10,10 @@ The miniquizzes cover material from the lectures, and are graded for *completion
 1. [Miniquiz #1 (due Sep 5, 11:59 PM)](https://www.gradescope.com/courses/1099582/assignments/6618088)
 1. [Miniquiz #2 (due Sep 8, 11:59 PM)](https://www.gradescope.com/courses/1099582/assignments/6676585) — ([Blank][m02])
 1. [Miniquiz #3 (due Sep 9, 11:59 PM)](https://www.gradescope.com/courses/1099582/assignments/6676625) — ([Blank][m03])
+1. [Miniquiz #4 (due Sep 8, 11:59 PM)](https://www.gradescope.com/courses/1099582/assignments/6702156) — ([Blank][m04])
+1. [Miniquiz #5 (due Sep 9, 11:59 PM)](https://www.gradescope.com/courses/1099582/assignments/6702196) — ([Blank][m05])
 
 [m02]: assets/documents/miniquizzes/quiz02.pdf
 [m03]: assets/documents/miniquizzes/quiz03.pdf
+[m04]: assets/documents/miniquizzes/quiz04.pdf
+[m05]: assets/documents/miniquizzes/quiz05.pdf
