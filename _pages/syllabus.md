@@ -63,7 +63,9 @@ There will be weeks that have few or no lectures, especially as we draw closer t
 If you have taken [6.110](https://6110-sp25.github.io), you may be familiar with the re-lecture videos which are video recordings of lecture content. 6.112 will not have any re-lectures for this offering. Lecture slides and recitation materials will still be available on this website; however, you are personally responsible for catching up on any missed content on your own.
 
 ## Office Hours
-We will not hold office hours for the first week of classes. The particular room and times will be released by the end of the first week of class.
+We will not hold office hours for the first week of classes. ~~The particular room and times will be released by the end of the first week of class.~~
+
+We plan to hold office hours every Tuesday and Thursday from 4-6pm. Right now, the room is not permanent. Temporarily, we will be holding office hours in 32-397.
 
 ## Quiz
 One quiz will be held during class time towards the end of the semester. Please check the [schedule][schedule] for the particular date. More information about quizzes, including practice material, will be released closer to the quiz dates.
