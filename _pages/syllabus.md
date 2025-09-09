@@ -21,7 +21,7 @@ Studies the design and implementation of modern, dynamic programming languages. 
 [Michael Carbin](https://people.csail.mit.edu/mcarbin/) (<mcarbin@mit.edu>)
 
 #### Teaching Assistants
-Kosi Nwabueze (<kosinw@mit.edu>)
+Kosi Nwabueze (<kosinw@mit.edu>) \\
 Ege Kabasakaloglu (<egekabas@mit.edu>)
 
 Please contact the course staff by posting on [Piazza][piazza] or emailing <6.112-staff@mit.edu>.
