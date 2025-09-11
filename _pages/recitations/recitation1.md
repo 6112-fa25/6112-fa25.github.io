@@ -72,11 +72,11 @@ This process involves analyzing the sequence of tokens to determine if they form
 
 
 #### Specification
-When you run `./run.sh scan <filename>` on a **lexically valid input file**, it should:
+When you run `./run.sh parse <filename>` on a **syntactically valid input file**, it should:
 * Exit with return code 0 (in UNIX-land, this means the program succeeded)
 * The autograder won't check the output, but you should pretty-print some visualization of your AST to stdout
 
-When you run `./run.sh scan <filename>` on a **lexically invalid input file**, it should:
+When you run `./run.sh parse <filename>` on a **syntactically invalid input file**, it should:
 * Exit with a non-zero return code (in UNIX-land, this means the program failed)
 * The autograder won't check the output, but you should output as many errors as possible to stderr
 
