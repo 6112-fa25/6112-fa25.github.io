@@ -10,6 +10,8 @@ Nominally, class meetings are one hour long and take place at the following time
 - At 1 p.m. on Mondays, Wednesdays, and Fridays in **<u>56-114</u>**.
 - At 1 p.m. on Tuesdays and Thursdays in **<u>36-155</u>**.
 
+Office Hours will be held in **26-328** every **Tuesday** and **Thursday** from **4-6pm**.
+
 **Note:** Lecture and recitation content on this calendar is subject to change.
 
 <div class="calendar-wrapper">
