@@ -1,7 +1,7 @@
 ---
 title: Recitation 2
 parent: Recitations
-nav_order: 10
+nav_order: 20
 ---
 
 Today, we will cover more advanced C++ features including standard library containers and object-oriented programming.
