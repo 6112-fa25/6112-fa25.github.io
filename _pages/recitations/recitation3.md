@@ -20,7 +20,7 @@ Variables       x ::= String
 
 First, we will rewrite our grammar to be unambiguous. This should always be the first step because it makes writing the recursive descent parser a mechanical translation.
 
-```antlr4
+```
 term
     :
     | 'fun' IDENTIIFER '->' term
