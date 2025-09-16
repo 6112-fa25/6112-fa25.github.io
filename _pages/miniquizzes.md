@@ -12,8 +12,12 @@ The miniquizzes cover material from the lectures, and are graded for *completion
 1. [Miniquiz #3](https://www.gradescope.com/courses/1099582/assignments/6676625) — ([Blank][m03])
 1. [Miniquiz #4](https://www.gradescope.com/courses/1099582/assignments/6702156) — ([Blank][m04])
 1. [Miniquiz #5](https://www.gradescope.com/courses/1099582/assignments/6702196) — ([Blank][m05])
+1. [Miniquiz #6]() — ([Blank][m06])
+1. [Miniquiz #7]() — ([Blank][m07])
 
 [m02]: assets/documents/miniquizzes/quiz02.pdf
 [m03]: assets/documents/miniquizzes/quiz03.pdf
 [m04]: assets/documents/miniquizzes/quiz04.pdf
 [m05]: assets/documents/miniquizzes/quiz05.pdf
+[m06]: assets/documents/miniquizzes/quiz06.pdf
+[m07]: assets/documents/miniquizzes/quiz07.pdf
