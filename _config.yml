@@ -4,6 +4,8 @@ theme: just-the-docs
 
 url: https://6112-fa25.github.io
 
+math: katex
+
 back_to_top: true
 back_to_top_text: "Back to top"
 footer_content: " "
@@ -54,6 +56,9 @@ callouts:
   announcement:
     title: Announcement
     color: blue
+  important:
+    title: Important
+    color: yellow
   goal:
     title: Goal
     color: green
