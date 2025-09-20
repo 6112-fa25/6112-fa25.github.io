@@ -18,17 +18,21 @@ This handout will be released before September 22 before 12pm.
 
 ## Interpreter
 
-Your interpreter, which will be invoked by the [`./run.sh interpret` subcommand][cli], should take as input a single command-line argument that represents the path to a file containing an MITScript program. As output, your interpreter should produce the output, written to standard output, of that MITScript program according to the semantics given in the language specification. For instance, if `arith.mit` contains the following program:
+Your interpreter, which will be invoked by the [`./run.sh interpret` subcommand][cli], should take as input a single command-line argument that represents the path to a file containing an MITScript program. As output, your interpreter should produce the output, written to standard output, of the execution of that MITScript program according to the semantics given in the language specification.
+
+ For instance, if `arith.mit` contains the following program:
 
 ```python
 print("1 + 1 = " + (1 + 1));
 ```
 
-then executing the command `./run.sh interpret arith.mit` in standard output should produce the following output:
+then executing the command `./run.sh interpret arith.mit` in standard output should produce the following output (in standard output):
 
 ```python
 1 + 1 = 2
 ```
+
+Keep in mind, that the output must go to **standard output**, and not to an output file specified by the `-o` flag.
 
 We will be evaluating your interpreter by passing in programs and verifying that the output of your interpreter matches that of our reference implementation.
 

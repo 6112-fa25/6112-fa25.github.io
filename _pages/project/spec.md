@@ -1,7 +1,7 @@
 ---
-title: Specification
+title: MITScript Specification
 parent: Project
-nav_order: 90
+nav_order: 0
 ---
 
 [Download PDF](assets/documents/spec.pdf)
