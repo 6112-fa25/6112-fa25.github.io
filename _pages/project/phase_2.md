@@ -4,9 +4,7 @@ parent: Project
 nav_order: 20
 ---
 
-This handout will be released before September 22 before 12pm.
-
-<!-- In this phase, you will implement a recursive interpreter for the MITScript language. The semantics of MITScript is documented in the [language specification](assets/documents/spec.pdf), which you should use to inform your interpreter implementation. Be sure to read it carefully.
+In this phase, you will implement a recursive interpreter for the MITScript language. The semantics of MITScript is documented in the [language specification](assets/documents/spec.pdf), which you should use to inform your interpreter implementation. Be sure to read it carefully.
 
 {% include toc.html %}
 
@@ -147,7 +145,7 @@ Submit a short report (about 3 paragraphs) under [Phase 2 Report on Gradescope](
 3. **Reflection and Project Status.** Be honest about your progress:
 - Is everything working? Are there any failing tests or problems you know about?
 - If you could start over, what would you do differently?
-- Is there anything specific you'd like help with from the TAs? -->
+- Is there anything specific you'd like help with from the TAs?
 
 [s3]: https://studentlife.mit.edu/s3
 [autograder]: {% link _pages/tutorials/autograder.md %}
