@@ -136,7 +136,6 @@ Submit a short report (about 3 paragraphs) under [Phase 2 Report on Gradescope](
 
 1. **Implementation.** Explain at a high level how you implemented this phase:
 - What data structures did you use (e.g. ASTs)?
-- How did you handle and report multiple errors?
 
 2. **Testing and Debugging.** How did you check that your code works correctly?
 - Did you write extra test cases? How did you make sure you tested enough?
