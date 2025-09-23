@@ -11,10 +11,10 @@ Nominally, class meetings are one hour long and take place at the following time
 - At 1 p.m. on Tuesdays and Thursdays in **<u>36-155</u>**.
 
 Office Hours will be:
-* Monday in **26-328** from **4-5pm**
-* Tuesday in **26-328** from **4-6pm**
-* Wednesday in **34-302** from **4-5pm**
-* Thursday in **26-328** from **4-6pm**
+* Monday in **26-328** from **4-5pm** (Ege)
+* Tuesday in **26-328** from **4-6pm** (Kosi)
+* Wednesday in **34-302** from **4-5pm** (Ege)
+* Thursday in **26-328** from **4-6pm** (Kosi)
 
 **Note:** Lecture and recitation content on this calendar is subject to change.
 
