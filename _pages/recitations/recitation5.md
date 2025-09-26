@@ -19,7 +19,8 @@ Additional office hours! Ege, our learning assistant, will be holding office hou
 Let's first recap the abstract syntax of our toy lambda calculus.
 
 ```ocaml
-Terms           t ::= x | fun x -> t | t t | true | false | if t then t else t | n | t + t | t * t | let x = t in t
+Terms           t ::= x | fun x -> t | t t | true | false | if t then t else t | n | t Bop t | let x = t in t
+Bop             ::= + | * | -
 Naturals        n ::= Nat
 Variables       x ::= String
 ```
@@ -27,6 +28,8 @@ Variables       x ::= String
 ## Semantics
 
 Now let's define how our programs evaluate using a stack and heap. The notation \\(\langle S, H, t \rangle \Downarrow \langle S', H', v \rangle\\) means "with stack \\(S\\) and heap \\(H\\), term \\(t\\) evaluates to value \\(v\\), producing new stack \\(S'\\) and heap \\(H'\\)".
+
+Similar to JavaScript, we will use the terms "truthy" and "falsy" to refer to the boolean values `true` and `false`. In addition, natural numbers which are not zero are truthy, and zero is falsy.
 
 The stack \\(S\\) maps variables to heap addresses (which we say are natural numbers), \\(S : X \to \mathbb{N}\\).
 The heap \\(H\\) maps addresses to values (\\(V\\)), \\(H : \mathbb{N} \to V\\).
@@ -56,25 +59,19 @@ The heap \\(H\\) maps addresses to values (\\(V\\)), \\(H : \mathbb{N} \to V\\).
 <br>
 
 \\[
-\frac{\langle S, H, t_1 \rangle \Downarrow \langle S_1, H_1, \text{true} \rangle \quad \langle S_1, H_1, t_2 \rangle \Downarrow \langle S_2, H_2, v \rangle}{\langle S, H, \text{if } t_1 \text{ then } t_2 \text{ else } t_3 \rangle \Downarrow \langle S_2, H_2, v \rangle}
+\frac{\langle S, H, t_1 \rangle \Downarrow \langle S_1, H_1, \text{"truthy"} \rangle \quad \langle S_1, H_1, t_2 \rangle \Downarrow \langle S_2, H_2, v \rangle}{\langle S, H, \text{if } t_1 \text{ then } t_2 \text{ else } t_3 \rangle \Downarrow \langle S_2, H_2, v \rangle}
 \\]
 
 <br>
 
 \\[
-\frac{\langle S, H, t_1 \rangle \Downarrow \langle S_1, H_1, \text{false} \rangle \quad \langle S_1, H_1, t_3 \rangle \Downarrow \langle S_2, H_2, v \rangle}{\langle S, H, \text{if } t_1 \text{ then } t_2 \text{ else } t_3 \rangle \Downarrow \langle S_2, H_2, v \rangle}
+\frac{\langle S, H, t_1 \rangle \Downarrow \langle S_1, H_1, \text{"falsy"} \rangle \quad \langle S_1, H_1, t_3 \rangle \Downarrow \langle S_2, H_2, v \rangle}{\langle S, H, \text{if } t_1 \text{ then } t_2 \text{ else } t_3 \rangle \Downarrow \langle S_2, H_2, v \rangle}
 \\]
 
 <br>
 
 \\[
-\frac{\langle S, H, t_1 \rangle \Downarrow \langle S_1, H_1, n_1 \rangle \quad \langle S_1, H_1, t_2 \rangle \Downarrow \langle S_2, H_2, n_2 \rangle}{\langle S, H, t_1 + t_2 \rangle \Downarrow \langle S_2, H_2, n_1 + n_2 \rangle}
-\\]
-
-<br>
-
-\\[
-\frac{\langle S, H, t_1 \rangle \Downarrow \langle S_1, H_1, n_1 \rangle \quad \langle S_1, H_1, t_2 \rangle \Downarrow \langle S_2, H_2, n_2 \rangle}{\langle S, H, t_1 \times t_2 \rangle \Downarrow \langle S_2, H_2, n_1 \times n_2 \rangle}
+\frac{\langle S, H, t_1 \rangle \Downarrow \langle S_1, H_1, n_1 \rangle \quad \langle S_1, H_1, t_2 \rangle \Downarrow \langle S_2, H_2, n_2 \rangle}{\langle S, H, t_1 \text{ Bop } t_2 \rangle \Downarrow \langle S_2, H_2, n_1 \text{ Bop } n_2 \rangle}
 \\]
 
 <br>
