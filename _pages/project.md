@@ -65,7 +65,7 @@ The last class will be the “Virtual Machine Derby” at which your group will 
 
 ## Grading
 
-For the grading rubric, read the ["Grading" section from the syllabus][syllabus#grading].
+For the grading rubric, read the ["Grading" section from the syllabus][syllabus].
 
 <!-- As a reminder from the syllabus, the grading for the project is distributed as follows:
 
