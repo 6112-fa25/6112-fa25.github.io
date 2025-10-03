@@ -133,7 +133,7 @@ Make sure the `./build.sh` and `./run.sh` scripts are located at the **root** of
 
 ### Tests
 
-Create 10 test files named `test21.mit` through `test30.mit` that your garbage collector should be able to handle correctly. Put these in a folder called `additional-tests/` in your project. Try to test different features of the language.
+Create 5 test files named `test21.cpp` through `test25.cpp` that your garbage collector should be able to handle correctly. Put these in a folder called `additional-tests/` in your project. Try to test different features of the language.
 
 ### Report
 
