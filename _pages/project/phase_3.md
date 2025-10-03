@@ -20,8 +20,6 @@ We will also release the [Phase 4]({% link _pages/project/phase_4.md %}) handout
 
 Unlike the first two phases, this and the remaining phases of the project will be done in teams of up to three people. Once you have formed a team, one member of your team should submit this [Gradescope assignment](https://www.gradescope.com/courses/1099582/assignments/6876716/grade) as soon as possible, and we will create a new GitHub repo for your team that you should use for the rest of the semester.
 
-On this form you will be able to indicate your programming language of choice, your preferred teammates, and whether you’d like us to match you up with other people. You may also indicate whether you'd like us to match you up with other people.
-
 If you don't receive a GitHub invitation within 24 hours after submitting the Gradescope assignment, let us know on Piazza.  If you are still in search for teammates, do consider coordinating on [Piazza](https://piazza.com/class/meqenx20yy070s/post/5).
 
 ## Garbage Collection
