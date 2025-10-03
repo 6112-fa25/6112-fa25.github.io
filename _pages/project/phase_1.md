@@ -6,13 +6,14 @@ nav_order: 10
 
 This phase consists of two segments: lexical analysis (aka scanning or lexing) and syntactic analysis (aka parsing).
 
-{% include toc.html %}
-
 {: .announcement }
 > There are three components you need to submit for this phase:
 > 1. Your scanner and parser code, due at **10:00 PM on Monday, September 22**.
 > 2. A short report, due at **10:00 PM on Monday, September 22**.
 > 3. Ten additional test cases, due at **10:00 PM on Monday, September 22**.
+
+{% include toc.html %}
+
 
 
 ## Getting Started

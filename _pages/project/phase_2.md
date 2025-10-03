@@ -6,13 +6,13 @@ nav_order: 20
 
 In this phase, you will implement a recursive interpreter for the MITScript language. The semantics of MITScript is documented in the [language specification](assets/documents/spec.pdf), which you should use to inform your interpreter implementation. Be sure to read it carefully.
 
-{% include toc.html %}
-
 {: .announcement }
 > There are three components you need to submit for this phase:
 > 1. Your interpreter code, due at **10:00 PM on Friday, October 3**.
 > 2. A short report, due at **10:00 PM on Friday, October 3**.
 > 3. Ten additional test cases, due at **10:00 PM on Friday, October 3**.
+
+{% include toc.html %}
 
 ## Interpreter
 
