@@ -114,9 +114,9 @@ The public test cases are available at the [`6112-fa25/tests` repository](https:
 
 ### Code
 
-Submit your code and tests through Gradescope under Phase 3 using GitHub:
+Submit your code and tests through [Gradescope under Phase 3](https://www.gradescope.com/courses/1099582/assignments/6903365/) using GitHub:
 
-1. Push your code to your team's repository (`6112-fa25/fa25-team-<TEAM_NUMBER>`)
+1. Push your code to your team's repository (`6112-fa25/fa25-team<TEAM_NUMBER>`)
 2. We recommend creating a separate branch for submission (like `phase3-submission`)
 3. Go to the Phase 3 assignment on Gradescope and select your repository and branch
 
@@ -137,7 +137,7 @@ Create 10 test files named `test21.mit` through `test30.mit` that your garbage c
 
 ### Report
 
-Submit a short report (about 3 paragraphs) under [Phase 3 Report on Gradescope](https://www.gradescope.com/courses/1099582/assignments/6772230). As a soft rubric, your report should cover:
+Submit a short report (about 3 paragraphs) under [Phase 3 Report on Gradescope](https://www.gradescope.com/courses/1099582/assignments/6903370). As a soft rubric, your report should cover:
 
 1. **Implementation.** Explain at a high level how you implemented this phase:
 - What data structures did you use (e.g. garbage collector)?
