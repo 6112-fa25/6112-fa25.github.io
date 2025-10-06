@@ -35,6 +35,8 @@ SUBCOMMANDS:
 
 The command line arguments you must implement are listed in table above. Exactly one filename should be provided for `[input_file]`, which must not begin with a dash.
 
+The output file specified by `-o` is mainly relevant for the output of the lexer and compiler. Please read each phase's handout to understand when output should be written to an output file as opposed to standard output or standard error.
+
 Feel free to add extra arguments beyond the ones specified above. Any extra arguments should not interfere with the interface described above. The autograder will assume your project follows the interface above. For example, during the derby (phase 5), you may find it useful to implement a `-O,--opt` flag which controls which set of optimizations are enabled.
 
 For the provided skeleton, we have provided code which is sufficient to implement this interface. The TAs will not use any extra features you add for grading. However, you can tell us which, if any, to use for the derby.

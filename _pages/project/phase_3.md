@@ -4,9 +4,9 @@ parent: Project
 nav_order: 30
 ---
 
-In this phase, you will implement an automatic garbage collection system for your  implementing and incorporating a mark-and-sweep garbage collector.
+In this phase, you will implement an automatic garbage collection system for your future virtual machine by implementing and incorporating a mark-and-sweep garbage collector.
 
-We will also release the [Phase 4]({% link _pages/project/phase_4.md %}) handout in which you will implement a bytecode compiler and virtual machine interpreter for MITScript. Phases 3 and 4 are designed to be completed in parallel.
+We will also release the [Phase 4][p4] handout in which you will implement a bytecode compiler and virtual machine interpreter for MITScript. Phases 3 and 4 are designed to be completed in parallel.
 
 {: .announcement }
 > There are three components you need to submit for this phase:
@@ -151,4 +151,5 @@ Submit a short report (about 3 paragraphs) under [Phase 3 Report on Gradescope](
 
 [s3]: https://studentlife.mit.edu/s3
 [autograder]: {% link _pages/tutorials/autograder.md %}
+[p4]: {% link _pages/project/phase_4.md %}
 [cli]: {% link _pages/project/cli.md %}
