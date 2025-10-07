@@ -46,7 +46,7 @@ We can point you to many resources such as well-known textbooks, technical paper
 
 ## Project
 
-The main component of this course (95% of the grade) is a project where you will build a language implementation almost entirely from scratch. The first two phases (which cover parsing, lexing, and interpretation) of the project will be done individually, and the rest of the project will be done in groups of three.
+The main component of this course (85% of the grade) is a project where you will build a language implementation almost entirely from scratch. The first two phases (which cover parsing, lexing, and interpretation) of the project will be done individually, and the rest of the project will be done in groups of three.
 Details about the project can be found on the [project overview][project] page. Specific instructions for each phase of the project will be released later in the class.
 
 ## Class
