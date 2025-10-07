@@ -341,6 +341,8 @@ Submit your code and tests through Gradescope under Phase 4 using GitHub:
 
 The autograder will run tests and show you how many you passed. It can take up to 40 minutes to run. Check the [Autograder][autograder] page for details about the testing environment.
 
+**Important:** Please only have one submission for your entire team. Include each of your team members in the submission on Gradescope. When grading, we will just grade the most recent submission from your team (so make sure you are all on the same page)!
+
 **Tip:** Submit early once your build system works to make sure the autograder can compile your code. You can submit as many times as you want before the deadline.
 
 Check the course [late policy]({% link _pages/syllabus.md %}#late-policy) for submission deadlines.
