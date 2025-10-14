@@ -405,3 +405,4 @@ As a group, you should plan to use your interpreters from Phase 2 to provide ref
 [p2]: {% link _pages/project/phase_2.md %}
 [p3]: {% link _pages/project/phase_3.md %}
 [cli]: {% link _pages/project/cli.md %}
+[autograder]: {% link _pages/tutorials/autograder.md %}
