@@ -12,7 +12,7 @@ We will also release the [Phase 4][p4] handout in which you will implement a byt
 > There are three components you need to submit for this phase:
 > 1. Your garbage collector code, due at **10:00 PM on Friday, October 17**.
 > 2. A short report, due at **10:00 PM on Friday, October 17**.
-> 3. Ten additional test cases, due at **10:00 PM on Friday, October 17**.
+> 3. Five additional test cases, due at **10:00 PM on Friday, October 17**.
 
 {% include toc.html %}
 
@@ -101,7 +101,7 @@ Below are some suggested enhancements on top of the basic implementation strateg
 This phase is worth 10% of your total grade:
 
 - Passing the C++ unit tests for your garbage collector
-- Your 10 additional test cases in the `additional-tests/` folder
+- Your 5 additional test cases in the `additional-tests/` folder
 - Your short report (about 3 paragraphs) explaining your approach
 
 The public test cases are available at the [`6112-fa25/tests` repository](https://github.com/6112-fa25/tests).
