@@ -323,17 +323,17 @@ For this assignment, we will use the convention that the first three indices in 
 Your bytecode interpreter should detect when one of these functions has been called and perform the correct action.
 
 ## Compiler
-Your compiler should translate the AST representation of an MITScript program to a single bytecode function and pretty print the bytecode to standard output (the command line). We have included a pretty printer class as part of the skeleton that may use to pretty print your bytecode representation for output.
+Your compiler should translate the AST representation of an MITScript program to a single bytecode function and pretty print the bytecode to the output file specified in the [Command Line Reference][cli]. We have included a pretty printer class as part of the skeleton that may use to pretty print your bytecode representation for output.
 
 As explained above, the definition of a function within the program should be located within the function's field of that function's parent function. If the function does not syntactically have a parent function (it is defined at the top level), then its parent should be the single bytecode function that you generate for the whole program.
 
-The interface for the compiler should be `./run.sh compile <input>.mit -o <output>.mitbc`, where `<input>` refers to an input MITScript program and `<output>` refers to the resulting MITScript bytecode.
+The interface for the compiler should be `./run.sh compile <input>.mit -o <output>.mitbc`, where `<input>` refers to an input MITScript program and `<output>` refers to the resulting MITScript bytecode file location.
 
 ## Submission
 
 ### Code
 
-Submit your code and tests through Gradescope under Phase 4 using GitHub:
+Submit your code and tests through [Gradescope under Phase 4](https://www.gradescope.com/courses/1099582/assignments/6993925) using GitHub:
 
 1. Push your code to your team's repository (`6112-fa25/fa25-team<TEAM_NUMBER>`)
 2. We recommend creating a separate branch for submission (like `phase4-submission`)
