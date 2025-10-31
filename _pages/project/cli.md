@@ -16,6 +16,7 @@ OPTIONS:
   -h,     --help              Print this help message and exit
   -o,     --output TEXT       Path to output file, use '-' for stdout
   -m,     --mem UINT          Memory limit in MB -- Only enabled for VM subcommand
+  -O,     --opt TEXT          Optimization flags -- Only enabled for derby subcommand
 
 SUBCOMMANDS:
   scan
@@ -23,20 +24,107 @@ SUBCOMMANDS:
   compile
   interpret
   vm
+  derby
 ```
 
-| **Subcommand**  | **Description**                                                                                |
-| --------------- | ---------------------------------------------------------------------------------------------- |
-| `scan`          | **Phase 1**. Runs the scanner subcommand, outputs list of tokens from input file.              |
-| `parse`         | **Phase 1**. Runs the parser subcommand, pretty prints AST from input file.                    |
-| `interpret`     | **Phase 2**. Runs the recursive interpreter on given input file.                               |
-| `compile`       | **Phase 4**. Runs the bytecode compiler on given input file, outputs MITScript bytecode file.  |
-| `vm`            | **Phase 4**. Runs the bytecode virtual machine on given bytecode file.                         |
+| **Subcommand** | **Phase**  | **Description**                                                                                           |
+|:--------------:|:----------:|:---------------------------------------------------------------------------------------------------------|
+| `scan`         | Phase 1    | Runs the scanner subcommand, outputs list of tokens from input file.                                      |
+| `parse`        | Phase 1    | Runs the parser subcommand, pretty prints AST from input file.                                            |
+| `interpret`    | Phase 2    | Runs the recursive interpreter on given input file.                                                       |
+| `compile`      | Phase 4    | Runs the bytecode compiler on given input file, outputs MITScript bytecode file.                          |
+| `vm`           | Phase 4    | Runs the bytecode virtual machine on given bytecode file.                                                 |
+| `derby`        | Phase 5    | Takes in an MITScript source program and executes it with the given optimization flags.                   |
 
 The command line arguments you must implement are listed in table above. Exactly one filename should be provided for `[input_file]`, which must not begin with a dash.
 
 The output file specified by `-o` is mainly relevant for the output of the lexer and compiler. Please read each phase's handout to understand when output should be written to an output file as opposed to standard output or standard error.
 
-Feel free to add extra arguments beyond the ones specified above. Any extra arguments should not interfere with the interface described above. The autograder will assume your project follows the interface above. For example, during the derby (phase 5), you may find it useful to implement a `-O,--opt` flag which controls which set of optimizations are enabled.
+Feel free to add extra arguments beyond the ones specified above. Any extra arguments should not interfere with the interface described above. The autograder will assume your project follows the interface above. For phase 5, you will need to implement a `-O,--opt` flag which controls which set of optimizations are enabled.
 
-For the provided skeleton, we have provided code which is sufficient to implement this interface. The TAs will not use any extra features you add for grading. However, you can tell us which, if any, to use for the derby.
+For the provided [skeleton](https://github.com/6112-fa25/skeleton), we have provided code which is sufficient to implement this interface. The TAs will not use any extra features you add for grading. However, you can tell us which, if any, to use for the derby.
+
+## Examples
+
+### scan
+
+Scan a source file and output tokens to stdout:
+```bash
+./run.sh scan program.mit
+```
+
+Scan a source file and save tokens to a file:
+```bash
+./run.sh scan program.mit -o tokens.txt
+```
+
+Scan from stdin:
+```bash
+echo "let x = 5" | ./run.sh scan -
+```
+
+### parse
+
+Parse a source file and pretty print the AST to stdout:
+```bash
+./run.sh parse program.mit
+```
+
+Parse a source file and save AST to a file:
+```bash
+./run.sh parse program.mit -o ast.txt
+```
+
+### interpret
+
+Run the recursive interpreter on a source file:
+```bash
+./run.sh interpret program.mit
+```
+
+Interpret from stdin:
+```bash
+echo "print(42)" | ./run.sh interpret -
+```
+
+### compile
+
+Compile a source file to bytecode:
+```bash
+./run.sh compile program.mit -o program.mitbc
+```
+
+Compile to stdout:
+```bash
+./run.sh compile program.mit -o -
+```
+
+### vm
+
+Run the virtual machine on a bytecode file:
+```bash
+./run.sh vm program.mitbc
+```
+
+Run with a memory limit (256 MB):
+```bash
+./run.sh vm program.mitbc -m 256
+```
+
+### derby
+
+Execute a source program with default optimizations:
+```bash
+./run.sh derby program.mit
+```
+
+Execute with specific optimization flags:
+```bash
+./run.sh derby program.mit -O opt1,opt2
+```
+
+Execute with all optimizations:
+```bash
+./run.sh derby program.mit -O all
+```
+

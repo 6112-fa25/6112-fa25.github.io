@@ -24,8 +24,7 @@ Studies the design and implementation of modern, dynamic programming languages. 
 Kosi Nwabueze (<kosinw@mit.edu>)
 
 #### Learning Assistants
-Ege Kabasakaloglu (<egekabas@mit.edu>) \\
-Benjamin Chen (<bchen27@mit.edu>)
+Ege Kabasakaloglu (<egekabas@mit.edu>)
 
 Please contact the course staff by posting on [Piazza][piazza] or emailing <6.112-staff@mit.edu>.
 
