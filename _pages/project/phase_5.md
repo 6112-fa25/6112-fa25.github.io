@@ -8,8 +8,8 @@ Your goal for this final phase is to optimize your virtual machine implementatio
 
 {: .announcement }
 > There are two components you need to submit for this phase:
-> 1. Your derby-ready interpreter, due at **10:00 PM on Tuesday, Decemeber 9**.
-> 2. A comprehensive report, due at **10:00 PM on Tuesday, Decemeber 9**.
+> 1. Your derby-ready interpreter, due at **11:59 PM on Monday, December 8**.
+> 2. A comprehensive report, due at **11:59 PM on Monday, December 8**.
 
 {% include toc.html %}
 

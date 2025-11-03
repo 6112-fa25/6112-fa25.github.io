@@ -288,7 +288,7 @@ You can assume that `N` will be at least twice as large as the maximum amount of
 
 To measure the peak memory usage of your VM, we will use `/usr/bin/time -v` and look at the reported maximum resident set size, which should be within `N + 5 MB`. The additional 5 MB is to allow for extra memory that's needed to load your VM binary into memory. These tests are intended to evaluate whether your VM properly invokes the garbage collector to limit memory usage.
 
-Some tests for this assignment will depend on the ability of your implementation to stay within the memory limits given by `-mem N`.
+Some tests for this assignment will depend on the ability of your implementation to stay within the memory limits given by `--mem N`.
 
 ### Errors
 The virtual machine reports the same exceptions for the error conditions as in Phase 2. At the bytecode level, however, there are also new opportunities for execution to encounter an error. For example, consider this alternative translation of our first MITScript program:
