@@ -286,6 +286,8 @@ Your virtual machine should support a command line argument of the form `--mem N
 
 You can assume that `N` will be at least twice as large as the maximum amount of memory that will ever be required by the program you are running. You can also assume that `N` will always be at least 4. Your garbage collector should make sure that the virtual machine never has more than this amount of memory allocated at any time.
 
+To measure the peak memory usage of your VM, we will use `/usr/bin/time -v` and look at the reported maximum resident set size, which should be within `N + 5 MB`. The additional 5 MB is to allow for extra memory that's needed to load your VM binary into memory. These tests are intended to evaluate whether your VM properly invokes the garbage collector to limit memory usage.
+
 Some tests for this assignment will depend on the ability of your implementation to stay within the memory limits given by `-mem N`.
 
 ### Errors

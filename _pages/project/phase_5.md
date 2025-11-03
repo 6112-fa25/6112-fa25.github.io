@@ -16,7 +16,7 @@ Your goal for this final phase is to optimize your virtual machine implementatio
 
 ## Getting Started
 
-1. Review the updated [project skeleton](https://github.com/mit-6112/fa25-skeleton) which includes parsing logic for the new derby command line submission.
+1. Review the updated [project skeleton](https://github.com/6112-fa25/skeleton) which includes parsing logic for the new derby command line submission.
 1. Review the updated [command line reference]({% link _pages/project/cli.md %}) which now includes a spec on the new derby subcommand.
 
 ## Overview
