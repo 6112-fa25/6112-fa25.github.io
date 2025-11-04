@@ -1,4 +1,3 @@
-
 ---
 title: Recitation 9
 parent: Recitations
