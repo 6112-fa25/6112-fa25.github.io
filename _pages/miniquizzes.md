@@ -28,6 +28,10 @@ The miniquizzes cover material from the lectures, and are graded for *completion
 1. Miniquiz #19 — ([Blank][m19], [Answers][m19-answers])
 1. Miniquiz #20 — ([Blank][m20], [Answers][m20-answers])
 1. Miniquiz #21 — ([Blank][m21], [Answers][m21-answers])
+1. Miniquiz #22 — ([Blank][m22], [Answers][m22-answers])
+1. Miniquiz #23 — ([Blank][m23], [Answers][m23-answers])
+1. Miniquiz #24 — ([Blank][m24], [Answers][m24-answers])
+1. Miniquiz #25 — ([Blank][m25], [Answers][m25-answers])
 
 [m02]: assets/documents/miniquizzes/quiz02.pdf
 [m03]: assets/documents/miniquizzes/quiz03.pdf
@@ -49,6 +53,10 @@ The miniquizzes cover material from the lectures, and are graded for *completion
 [m19]: assets/documents/miniquizzes/quiz19.pdf
 [m20]: assets/documents/miniquizzes/quiz20.pdf
 [m21]: assets/documents/miniquizzes/quiz21.pdf
+[m22]: assets/documents/miniquizzes/quiz22.pdf
+[m23]: assets/documents/miniquizzes/quiz23.pdf
+[m24]: assets/documents/miniquizzes/quiz24.pdf
+[m25]: assets/documents/miniquizzes/quiz25.pdf
 
 [m02-answers]: assets/documents/miniquizzes/quiz02-answers.pdf
 [m03-answers]: assets/documents/miniquizzes/quiz03-answers.pdf
@@ -69,3 +77,7 @@ The miniquizzes cover material from the lectures, and are graded for *completion
 [m19-answers]: assets/documents/miniquizzes/quiz19-answers.pdf
 [m20-answers]: assets/documents/miniquizzes/quiz20-answers.pdf
 [m21-answers]: assets/documents/miniquizzes/quiz21-answers.pdf
+[m22-answers]: assets/documents/miniquizzes/quiz22-answers.pdf
+[m23-answers]: assets/documents/miniquizzes/quiz23-answers.pdf
+[m24-answers]: assets/documents/miniquizzes/quiz24-answers.pdf
+[m25-answers]: assets/documents/miniquizzes/quiz25-answers.pdf
