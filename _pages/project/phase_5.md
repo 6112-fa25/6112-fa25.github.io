@@ -136,7 +136,7 @@ For the milestone (due November 14 at 10 pm ET), you are expected to submit a pr
 
 ## Extra Credit Checkpoint
 
-Phase 5 has one extra credit checkpoint, due on November 24 at 10pm ET. We will run your VM end to end on the Phase 5 public tests with the garbage collector and all optimizations enabled (i.e., with the command-line options `./run.sh derby -mem N --opt all` where `N` is the memory limit specified for each test program) and assign extra credit towards your Phase 5 grade in proportion to your VM's "base grade" at the time of the due date (maximum 5% for a base grade of 1). The formula for computing your VM's "base grade" is detailed in the next section. As with the final submission, make sure you push your code to a branch with the name `phase5-submission`.
+Phase 5 has one extra credit checkpoint, due on November 24 at 10pm ET. We will run your VM end to end on the Phase 5 public tests with the garbage collector and all optimizations enabled (i.e., with the command-line options `./run.sh derby -mem N --opt all` where `N` is the memory limit specified for each test program) and assign extra credit towards your Phase 5 grade in proportion to your VM's correctness.
 
 ## Derby
 
