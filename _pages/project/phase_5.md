@@ -74,11 +74,11 @@ Your VM may implement as many of the optimizations listed above as you'd like or
 
 Your VM must provide a command-line option for enabling each optimization that affects code generation (either bytecode/IR or machine code). Your writeup should document how each flag can be used. For example:
 
-*   `--opt inline`: turns on function inlining
-*   `--opt constantprop`: turns on constant propagation
-*   `--opt inline,constantprop`: turns on both function inlining and constant propagation
+*   `-O inline`: turns on function inlining
+*   `-O constantprop`: turns on constant propagation
+*   `-O inline,constantprop`: turns on both function inlining and constant propagation
 
-Your virtual machine (compiler and interpreter) must also provide a `--opt all` flag to turn on all optimizations (“full optimizations”). We will use this command-line option for the derby. For optimizations that affect code generation, the `--opt all` option should consider how many times to apply each optimization and in what order the optimizations should be applied.
+Your virtual machine (compiler and interpreter) must also provide a `-O all` flag to turn on all optimizations (“full optimizations”). We will use this command-line option for the derby. For optimizations that affect code generation, the `-O all` option should consider how many times to apply each optimization and in what order the optimizations should be applied.
 
 ### Code
 
@@ -111,7 +111,7 @@ Your writeup should include the following:
 
 1.   **Overview**: An overview of your design, an analysis of design alternatives you considered, and key design decisions. Be sure to document and justify all design decisions you make. Any decision accompanied by a convincing argument will be accepted. If you realize there are flaws or deficiencies in your design late in the implementation process, discuss those flaws and how you would have done things differently. Also include any changes you made to your implementations from previous phases and explain why they were necessary.
 
-        For the `--opt all` flag that your VM implements, your report should further discuss how you determined the order in which optimizations that affect code generation are performed and how many times each optimization is applied.
+        For the `-O all` flag that your VM implements, your report should further discuss how you determined the order in which optimizations that affect code generation are performed and how many times each optimization is applied.
 
 2.   **Implementation**: A brief description of interesting implementation issues. This should include any non-trivial algorithms, techniques, and data structures. It should also include any insights you discovered during this phase of the project.
 
@@ -136,7 +136,7 @@ For the milestone (due November 14 at 10 pm ET), you are expected to submit a pr
 
 ## Extra Credit Checkpoint
 
-Phase 5 has one extra credit checkpoint, due on November 24 at 10pm ET. We will run your VM end to end on the Phase 5 public tests with the garbage collector and all optimizations enabled (i.e., with the command-line options `./run.sh derby -mem N --opt all` where `N` is the memory limit specified for each test program) and assign extra credit towards your Phase 5 grade in proportion to your VM's correctness.
+Phase 5 has one extra credit checkpoint, due on November 24 at 10pm ET. We will run your VM end to end on the Phase 5 public tests with the garbage collector and all optimizations enabled (i.e., with the command-line options `./run.sh derby -mem N -O all` where `N` is the memory limit specified for each test program) and assign extra credit towards your Phase 5 grade in proportion to your VM's correctness.
 
 ## Derby
 
