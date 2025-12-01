@@ -82,11 +82,13 @@ Your virtual machine (compiler and interpreter) must also provide a `-O all` fla
 
 ### Code
 
-Submit your code and tests through Gradescope under Phase 5 using GitHub:
+Submit your code and tests through [Gradescope under Phase 5 (Derby)](https://www.gradescope.com/courses/1099582/assignments/7230729/) using GitHub:
 
 1. Push your code to your team's repository (`6112-fa25/fa25-team<TEAM_NUMBER>`)
 2. We recommend creating a separate branch for submission (like `phase5-submission`)
 3. Go to the Phase 5 assignment on Gradescope and select your repository and branch
+
+If you want to check for correctness, you may also submit through [Gradescope under Phase 5 (Correctness)](https://www.gradescope.com/courses/1099582/assignments/7130735). Keep in mind that we will only grade your most recent submission to [Phase 5 (Derby)](https://www.gradescope.com/courses/1099582/assignments/7230729/) for the final deadline.
 
 The autograder will run tests and show you how many you passed. It can take up to 40 minutes to run. Check the [Autograder][autograder] page for details about the testing environment.
 
@@ -140,25 +142,52 @@ Phase 5 has one extra credit checkpoint, due on November 24 at 10pm ET. We will 
 
 ## Derby
 
-We will release more information about the derby once the derby server is up and running.
+You can find the performance results of your submitted code, as well as other teams (under anonymized names) at [derby.kosinw.com](https://derby.kosinw.com).
+You will receive your anonymized team name by email. The “Speedup” column on the leaderboard is the baseline time divided by the geometric mean of your benchmarks times.
 
-<!-- We will be holding a virtual machine derby on the last day of class, where will race your virtual machine against the submissions from the other groups in the class. The derby benchmarks will be revealed one day prior to the derby to help with final hour debugging.
 
-As mentioned previously, 30% of your grade for this phase will be determined by your VM's performance in the derby. In particular, suppose your VM correctly runs \(M\) out of the \(N\) derby benchmarks and, for those \(M\) benchmarks, achieves a geometric mean speedup of \(S\) versus the reference VM. The _base grade_ for your VM could then be computed as
+We will be holding a virtual machine derby on the last day of class, where will race your virtual machine against the submissions from the other groups in the class. We have released all but one of the derby benchmarks publicly. The final one will be revealed one day prior to the derby to help with final hour debugging.
 
-\\[
-BG = \min\left(1,\:\max\left(0,\:\frac{5+\log_3\left(S\right)}{6}\right)\right)\cdot\frac{M}{N}
-\\]
-
-Your ranking in the derby will be determined (solely) by your VM's base grade. Then, assuming that your VM is ranked \(K\)-th (where a smaller \(K\) denotes a higher rank), the performance portion of your final Phase 5 grade (out of 30%) will be computed as
+As mentioned previously, 30% of your grade for this phase will be determined by your VM's performance in the derby. In particular, suppose your virtual machine achieves a geometric mean speedup of $$S$$ versus the baseline. The _base grade_ for your VM could then be computed as:
 
 \\[
-TG = \min\left(1,\:BG\:+0.02\cdot\left(5-K\right)\right)\cdot100\%
+\text{base grade} = \min\left(1,\max\left(0,\frac{5+\log_3\left(S\right)}{6}\right)\right)
 \\]
 
-To help you monitor your progress, we will build a leaderboard website, which you can find at: [https://mit-61120.github.io/](https://mit-61120.github.io/). This leaderboard will be continuously updated until the due date for Phase 5.
+Your ranking in the derby will be determined (solely) by your virtual machine's base grade. Then, assuming that your virtual machine is ranked $$K$$-th (where a smaller $$K$$ denotes a higher rank), the performance portion of your final Phase 5 grade (out of 30 points) will be computed as
 
-On the day of the derby, your group will also give a short (3-5 minute) presentation on the design of your virtual machine as well as the optimizations that you implemented. -->
+\\[
+\text{total grade} = 30 \left( \min\left(1,\text{base grade}+0.02\cdot\left(9-K\right)\right) \right)
+\\]
+
+For your information, here is the `lscpu` information for the dedicated server (with some information redacted).
+
+```
+Architecture:              x86_64
+  CPU op-mode(s):          32-bit, 64-bit
+  Address sizes:           46 bits physical, 48 bits virtual
+  Byte Order:              Little Endian
+Vendor ID:                 GenuineIntel
+  CPU family:              6
+  Model:                   143
+  BogoMIPS:                4800.00
+  Flags:                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2
+                           ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology nonstop_tsc
+                           cpuid aperfmperf tsc_known_freq pni pclmulqdq monitor ssse3 fma cx16 pdcm pcid sse4_1 sse4_2 x2a
+                           pic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetc
+                           h cpuid_fault ssbd ibrs ibpb stibp ibrs_enhanced fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms inv
+                           pcid avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl
+                           xsaveopt xsavec xgetbv1 xsaves avx_vnni avx512_bf16 wbnoinvd ida arat avx512vbmi umip pku ospke
+                           waitpkg avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg tme avx512_vpopcntdq rdpid cldemote
+                           movdiri movdir64b md_clear serialize amx_bf16 avx512_fp16 amx_tile amx_int8 flush_l1d arc h_capabilities
+Caches (sum of all):
+  L1d:                     384 KiB (XXXX instances)
+  L1i:                     256 KiB (XXXX instances)
+  L2:                      16 MiB (XXXX instances)
+  L3:                      105 MiB (1 instance)
+```
+
+On the day of the derby, your group will give a short presentation on the design of your virtual machine as well as the optimizations that you implemented. This can be as formal or informal as you wish.
 
 ## Tips for Machine Code Generation
 
@@ -176,3 +205,6 @@ Some additional tips:
 ## Reference Materials
 
 Beyond the normal course materials, we have provided links on the course website to useful and well-known papers on register allocation. Reading these before designing and writing your register allocator may be very useful. We will also post links to papers about other useful optimizations to the course website as we discover them. You can find these links [here]({% link _pages/resources.md %}).
+
+[autograder]: {% link _pages/tutorials/autograder.md %}
+[cli]: {% link _pages/project/cli.md %}
