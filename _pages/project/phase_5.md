@@ -154,7 +154,7 @@ As mentioned previously, 30% of your grade for this phase will be determined by 
 \text{base grade} = \min\left(1,\max\left(0,\frac{5+\log_3\left(S\right)}{6}\right)\right)
 \\]
 
-Your ranking in the derby will be determined (solely) by your virtual machine's base grade. Then, assuming that your virtual machine is ranked $$K$$-th (where a smaller $$K$$ denotes a higher rank), the performance portion of your final Phase 5 grade (out of 30 points) will be computed as
+Your ranking in the derby will be determined (solely) by your virtual machine's base grade. Then, assuming that your virtual machine is ranked $$K^\text{th}$$ (where a smaller $$K$$ denotes a higher rank), the performance portion of your final Phase 5 grade (out of 30 points) will be computed as
 
 \\[
 \text{total grade} = 30 \left( \min\left(1,\text{base grade}+0.02\cdot\left(9-K\right)\right) \right)
